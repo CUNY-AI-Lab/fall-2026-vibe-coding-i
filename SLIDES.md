@@ -280,8 +280,8 @@ Each command is a card with text + CRT screen visualization.
 **Subtitle:** Our AI coding agent, connected to CUNY AI Lab models
 
 **Stage (two-column compare):**
-- **Windows — PowerShell:** 1. `winget install OpenJS.NodeJS.LTS` (Node.js 22.19 or newer) → 2. Close PowerShell and open a new window → 3. Check with `node --version` → 4. `npx.cmd @cuny-ai-lab/pi-workshop`
-- **macOS — Terminal:** 1. Install Node.js (22.19 or newer) from nodejs.org → 2. Open a new Terminal window → 3. Check with `node --version` → 4. `npx @cuny-ai-lab/pi-workshop`
+- **Windows — PowerShell:** 1. `winget install OpenJS.NodeJS.LTS` (Node.js 22.19 or newer) and `winget install Git.Git` → 2. Close PowerShell and open a new window → 3. Check with `node --version` and `git --version` → 4. `npx.cmd @cuny-ai-lab/pi-workshop`
+- **macOS — Terminal:** 1. Install Node.js (22.19 or newer) from nodejs.org → 2. Open a new Terminal window → 3. Check with `node --version` and `git --version` (if macOS offers to install developer tools for Git, click Install) → 4. `npx @cuny-ai-lab/pi-workshop`
 
 ---
 
@@ -291,7 +291,7 @@ Each command is a card with text + CRT screen visualization.
 **Title:** Connect Pi to CUNY AI Lab
 
 **Stage (step-grid, fragments):**
-1. When LazyPi offers to install Pi and its packages, accept the defaults (install all)
+1. When LazyPi asks, choose **Install everything**. It takes a few minutes; warnings, a skipped package, and a note about `/login` are normal: ignore them and wait for the key prompt
 2. At `CUNY AI Lab API key:` paste your key — your typing stays hidden, and the key is saved securely in Pi
 3. Start Pi: `pi` (macOS) / `pi.cmd` (Windows)
 4. Type `/model` and choose a CUNY AI Lab model

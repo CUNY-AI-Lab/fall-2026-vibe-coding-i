@@ -10,7 +10,7 @@ A single-page HTML slide deck for **Vibe Coding I: Foundations** (CUNY AI Lab ·
 
 - **Dates, times, rooms, registration link:** https://ailab.gc.cuny.edu/events/ (Vibe Coding I is Tue Sept 22, 2026, 2:30–4:00 pm; co-working sessions Thu Oct 29, Tue Nov 17, Thu Dec 3, 2:00–4:00 pm).
 - **AI coding agent:** Pi, installed and connected to CUNY AI Lab models via `npx @cuny-ai-lab/pi-workshop` (LazyPi). Follow https://github.com/CUNY-AI-Lab/pi-workshop for install steps. Gemini CLI and VS Code are no longer used in this workshop.
-- **Installs:** Node.js via nodejs.org installer (macOS) or `winget install OpenJS.NodeJS.LTS` (Windows); GitHub CLI via the cli.github.com installer (macOS) or `winget install GitHub.cli` (Windows). No Homebrew.
+- **Installs:** Git (`git --version` on macOS triggers the developer tools prompt; `winget install Git.Git` on Windows) is required because LazyPi clones some packages with git. Node.js via nodejs.org installer (macOS) or `winget install OpenJS.NodeJS.LTS` (Windows); GitHub CLI via the cli.github.com installer (macOS) or `winget install GitHub.cli` (Windows). No Homebrew.
 - **Slide 20 is a placeholder** for Steve's CUNY AI Lab gateway / API key / quota section.
 
 ## Repository Layout
