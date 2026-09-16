@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0b0e14" />
   <link rel="icon" type="image/png" href="src/logo.png" />
-  <title>Foundations: Coding with Generative AI — CAIL Workshop #1</title>
+  <title>Vibe Coding I: Foundations — CUNY AI Lab</title>
 
   <style>
     :root {
@@ -845,15 +845,15 @@
 <div id="slide-announce" aria-live="polite" aria-atomic="true"></div>
 
 <main id="slide-content" aria-label="Workshop slides">
-<h1 class="sr-only">Foundations: Coding with Generative AI — CAIL Workshop #1</h1>
+<h1 class="sr-only">Vibe Coding I: Foundations — CUNY AI Lab</h1>
 
   <!-- 1 · TITLE -->
   <section class="slide" role="group" aria-roledescription="slide" data-slide="title" aria-label="Title slide">
     <div class="content">
       <div>
-        <div class="label">CAIL Spotlight Workshop #1</div>
-        <h2>Foundations: Coding with Generative AI</h2>
-        <p class="date">Spring 2026</p>
+        <div class="label">CUNY AI Lab &middot; Vibe Coding Series</div>
+        <h2>Vibe Coding I: Foundations</h2>
+        <p class="date">Tuesday, September 22, 2026 &middot; 2:30&ndash;4:00 pm</p>
       </div>
       <div class="title-credit">
         <a href="https://ailab.gc.cuny.edu/" target="_blank" rel="noopener"><img src="img/Logo Horizontal Bianco@2x.png" alt="CUNY AI Lab" width="160" height="40"></a>
@@ -896,8 +896,8 @@
           <a class="agenda-item" href="#11"><span class="agenda-item-label">What is VS Code?</span></a>
           <a class="agenda-item" href="#12"><span class="agenda-item-label">Setting up an IDE</span></a>
           <a class="agenda-item" href="#13"><span class="agenda-item-label">The Command Line</span></a>
-          <a class="agenda-item" href="#18"><span class="agenda-item-label">Initializing a Git Repository</span></a>
-          <a class="agenda-item" href="#20"><span class="agenda-item-label">Getting Started with GitHub</span></a>
+          <a class="agenda-item" href="#17"><span class="agenda-item-label">What is Git / GitHub?</span></a>
+          <a class="agenda-item" href="#18"><span class="agenda-item-label">Getting Started with GitHub</span></a>
         </div>
 
         <div class="agenda-section">
@@ -905,10 +905,10 @@
             <span class="agenda-section-title">Part 3 — Installation &amp; Setup</span>
             <span class="agenda-section-time">30m</span>
           </div>
-          <a class="agenda-item" href="#23"><span class="agenda-item-label">Installing Gemini CLI</span></a>
-          <a class="agenda-item" href="#24"><span class="agenda-item-label">Login Step</span></a>
-          <a class="agenda-item" href="#26"><span class="agenda-item-label">Upcoming Workshop</span></a>
-          <a class="agenda-item" href="#27"><span class="agenda-item-label">Links &amp; Resources</span></a>
+          <a class="agenda-item" href="#20"><span class="agenda-item-label">Installing Gemini CLI</span></a>
+          <a class="agenda-item" href="#21"><span class="agenda-item-label">Login Step</span></a>
+          <a class="agenda-item" href="#23"><span class="agenda-item-label">Upcoming Workshops</span></a>
+          <a class="agenda-item" href="#24"><span class="agenda-item-label">Links &amp; Resources</span></a>
         </div>
 
       </div>
@@ -1322,141 +1322,7 @@
     </div>
   </section>
 
-  <!-- 18 · GIT BASICS: SETTING UP -->
-  <section class="slide" role="group" aria-roledescription="slide" data-slide="git-setup" aria-label="Git basics: setting up">
-    <div class="content">
-      <div class="label">Tool</div>
-      <h2>Git Basics</h2>
-      <h3>Setting Up</h3>
-    </div>
-    <div class="stage">
-      <div class="cmd-cards">
-        <div class="cmd-card frag">
-          <div class="cmd-info">
-            <code>git <span class="hl">init</span></code>
-            <span class="cmd-desc">Initialize a repo</span>
-          </div>
-          <div class="cmd-screen">
-            <div class="vis">
-              <div class="vis-col vis-pop">
-                <div class="vis-folder"><span class="vis-dot vis-dot--ok"></span></div>
-                <div class="vis-label">.git</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cmd-card frag">
-          <div class="cmd-info">
-            <code>git <span class="hl">add</span> .</code>
-            <span class="cmd-desc">Stage your changes</span>
-          </div>
-          <div class="cmd-screen">
-            <div class="vis vis-slide-r">
-              <div class="vis-col">
-                <div class="vis-file"></div>
-                <div class="vis-label">index.html</div>
-              </div>
-              <div class="vis-col">
-                <div class="vis-file"></div>
-                <div class="vis-label">style.css</div>
-              </div>
-              <span class="vis-arrow">&rarr;</span>
-              <div class="vis-stage-box">
-                <div class="vis-label">staged</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cmd-card frag">
-          <div class="cmd-info">
-            <code>git <span class="hl">commit</span> -m <span class="str">"first commit"</span></code>
-            <span class="cmd-desc">Save a snapshot</span>
-          </div>
-          <div class="cmd-screen">
-            <div class="vis">
-              <div class="vis-col vis-pop">
-                <div class="vis-commit"></div>
-                <div class="vis-label">a1b2c3d</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 19 · GIT BASICS: SYNCING & INSPECTING -->
-  <section class="slide" role="group" aria-roledescription="slide" data-slide="git-sync" aria-label="Git basics: syncing and inspecting">
-    <div class="content">
-      <div class="label">Tool</div>
-      <h2>Git Basics</h2>
-      <h3>Syncing &amp; Inspecting</h3>
-    </div>
-    <div class="stage">
-      <div class="cmd-cards">
-        <div class="cmd-card frag">
-          <div class="cmd-info">
-            <code>git <span class="hl">status</span></code>
-            <span class="cmd-desc">Check what changed</span>
-          </div>
-          <div class="cmd-screen">
-            <div class="vis vis-stagger">
-              <div class="vis-col">
-                <div class="vis-file"><span class="vis-dot vis-dot--ok"></span></div>
-                <div class="vis-label">index.html</div>
-              </div>
-              <div class="vis-col">
-                <div class="vis-file"><span class="vis-dot vis-dot--mod"></span></div>
-                <div class="vis-label">style.css</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cmd-card frag">
-          <div class="cmd-info">
-            <code>git <span class="hl">log</span> --oneline</code>
-            <span class="cmd-desc">View history</span>
-          </div>
-          <div class="cmd-screen">
-            <div class="vis vis-stagger">
-              <div class="vis-col">
-                <div class="vis-commit"></div>
-                <div class="vis-label">a1b2c3d</div>
-              </div>
-              <div class="vis-line"></div>
-              <div class="vis-col">
-                <div class="vis-commit"></div>
-                <div class="vis-label">e4f5g6h</div>
-              </div>
-              <div class="vis-line"></div>
-              <div class="vis-col">
-                <div class="vis-commit"></div>
-                <div class="vis-label">i7j8k9l</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="cmd-card frag">
-          <div class="cmd-info">
-            <code>git <span class="hl">push</span> origin main</code>
-            <span class="cmd-desc">Push to GitHub</span>
-          </div>
-          <div class="cmd-screen">
-            <div class="vis vis-slide-r">
-              <div class="vis-col">
-                <div class="vis-commit"></div>
-                <div class="vis-label">a1b2c3d</div>
-              </div>
-              <span class="vis-arrow">&rarr;</span>
-              <div class="vis-cloud"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 20 · LOGGING INTO GITHUB -->
+  <!-- 18 · LOGGING INTO GITHUB -->
   <section class="slide" role="group" aria-roledescription="slide" data-slide="gh-login" aria-label="Logging into GitHub from the command line">
     <div class="content">
       <div class="label">Setup</div>
@@ -1474,25 +1340,7 @@ winget install GitHub.cli  # Windows</span></div></div>
     </div>
   </section>
 
-  <!-- 21 · STAGING, COMMITTING, AND PUSHING TO GITHUB -->
-  <section class="slide" role="group" aria-roledescription="slide" data-slide="gh-repo" aria-label="Staging, committing, and pushing to GitHub">
-    <div class="content">
-      <div class="label">Setup</div>
-      <h2>Staging, Committing, and Pushing to GitHub</h2>
-    </div>
-    <div class="stage">
-      <div class="step-grid">
-        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">Create a README file:<span class="code-block">touch README.md</span></div></div>
-        <div class="step-row frag"><div class="step-num">2</div><div class="step-text">Stage your files:<span class="code-block">git add README.md</span></div></div>
-        <div class="step-row frag"><div class="step-num">3</div><div class="step-text">Commit your changes:<span class="code-block">git commit -m "first commit"</span></div></div>
-        <div class="step-row frag"><div class="step-num">4</div><div class="step-text">Create a GitHub repo:<span class="code-block">gh repo create my-project --public --source=.</span></div></div>
-        <div class="step-row frag"><div class="step-num">5</div><div class="step-text">Push your code to GitHub:<span class="code-block">git push -u origin main</span></div></div>
-        <div class="step-row frag"><div class="step-num">6</div><div class="step-text">Visit <strong>github.com/your-username/my-project</strong> to see it live</div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 22 · SECTION BREAK: PART 3 -->
+  <!-- 19 · SECTION BREAK: PART 3 -->
   <section class="slide slide-break" role="group" aria-roledescription="slide" data-slide="part3" style="--part:#2ea043;" aria-label="Part 3 section break">
     <div class="content">
       <div class="break-tag">Part 3</div>
@@ -1501,7 +1349,7 @@ winget install GitHub.cli  # Windows</span></div></div>
     </div>
   </section>
 
-  <!-- 23 · INSTALLING GEMINI CLI -->
+  <!-- 20 · INSTALLING GEMINI CLI -->
   <section class="slide" role="group" aria-roledescription="slide" data-slide="install" aria-label="Installing Gemini CLI">
     <div class="content">
       <div class="label">Setup</div>
@@ -1536,7 +1384,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"</span>
     </div>
   </section>
 
-  <!-- 24 · LOGIN SETUP -->
+  <!-- 21 · LOGIN SETUP -->
   <section class="slide" role="group" aria-roledescription="slide" data-slide="login" aria-label="Login setup">
     <div class="content">
       <div class="label">Setup</div>
@@ -1552,7 +1400,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"</span>
     </div>
   </section>
 
-  <!-- 25 · TROUBLESHOOTING -->
+  <!-- 22 · TROUBLESHOOTING -->
   <section class="slide" role="group" aria-roledescription="slide" data-slide="troubleshoot" aria-label="Troubleshooting">
     <div class="content">
       <div class="label">Check-in</div>
@@ -1574,32 +1422,32 @@ eval "$(/opt/homebrew/bin/brew shellenv)"</span>
   </section>
 
 
-  <!-- 26 · UPCOMING WORKSHOP -->
-  <section class="slide" role="group" aria-roledescription="slide" data-slide="nextsteps" aria-label="Upcoming Workshop">
+  <!-- 23 · UPCOMING WORKSHOPS -->
+  <section class="slide" role="group" aria-roledescription="slide" data-slide="nextsteps" aria-label="Upcoming Workshops">
     <div class="content">
       <div class="label">What's Next</div>
-      <h2>Upcoming Workshop</h2>
-      <h3>Vibe-Coding Prototypes &middot; Tuesday, March 10 &middot; 4:00&ndash;5:30 pm</h3>
+      <h2>Upcoming Workshops</h2>
+      <h3>New Media Lab (Room 7388.01), CUNY Graduate Center</h3>
     </div>
     <div class="stage">
       <div class="step-grid">
         <div class="step-row frag">
           <div class="step-num">1</div>
-          <div class="step-text">Use AI from the command line to build a small prototype. We'll model prompting, project design, and troubleshooting, then you'll customize a feature of your own.</div>
+          <div class="step-text"><strong>Vibe Coding II: Building a Prototype</strong> &middot; Tuesday, September 29 &middot; 2:30&ndash;4:00 pm<br><span style="opacity:0.7;">Use AI from the command line to build a small prototype, then customize a feature of your own. Prerequisite: this workshop, or prior familiarity with the command line and Git/GitHub.</span></div>
         </div>
         <div class="step-row frag">
           <div class="step-num">2</div>
-          <div class="step-text"><a href="https://docs.google.com/forms/d/e/1FAIpQLSenSkDfoz3ftYiz6t5KJUEdYDGrbkUKmR6SGVC4j-fF6qNbdA/viewform" target="_blank" rel="noopener">Register for the next workshop</a><br><span style="opacity:0.7;">Prerequisite: this workshop, or prior familiarity with the command line and Git/GitHub</span></div>
+          <div class="step-text"><strong>Vibe Coding III: Bring Your Own Project Clinic</strong> &middot; Tuesday, October 13 &middot; 2:30&ndash;4:00 pm<br><span style="opacity:0.7;">Prerequisite: Vibe Coding I &amp; II, or comparable experience</span></div>
         </div>
         <div class="step-row frag">
           <div class="step-num">3</div>
-          <div class="step-text"><strong>In the meantime:</strong> experiment with Gemini CLI on your own!<br><span style="opacity:0.7;">Try building a small page, asking it to explain code, or exploring a new idea from your terminal.</span></div>
+          <div class="step-text"><a href="https://cail-workshop-registration.ailab-452.workers.dev/" target="_blank" rel="noopener">Register for upcoming workshops</a><br><span style="opacity:0.7;"><strong>In the meantime:</strong> experiment with Gemini CLI on your own!</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 27 · RESOURCES -->
+  <!-- 24 · RESOURCES -->
   <section class="slide" role="group" aria-roledescription="slide" data-slide="resources" aria-label="Resources">
     <div class="content">
       <div class="label">Resources</div>
@@ -1691,13 +1539,13 @@ eval "$(/opt/homebrew/bin/brew shellenv)"</span>
   <div class="footer-slider">
     <button class="footer-arrow" id="btn-prev" aria-label="Previous slide"><span aria-hidden="true">&#8592;</span></button>
     <div class="slider-track">
-      <input type="range" id="slide-scrubber" min="1" max="27" value="1" aria-label="Navigate to slide">
+      <input type="range" id="slide-scrubber" min="1" max="24" value="1" aria-label="Navigate to slide">
       <div class="slider-progress"></div>
       <div class="slider-thumb" aria-hidden="true"></div>
     </div>
     <button class="footer-arrow" id="btn-next" aria-label="Next slide"><span aria-hidden="true">&#8594;</span></button>
     <div class="footer-meta" aria-hidden="true">
-      <span id="slider-counter">1 / 27</span>
+      <span id="slider-counter">1 / 24</span>
       <span class="kbd">Space</span>
     </div>
   </div>

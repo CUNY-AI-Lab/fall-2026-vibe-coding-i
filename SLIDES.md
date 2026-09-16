@@ -1,5 +1,5 @@
-# SLIDES.md — Foundations: Coding with Generative AI
-## CAIL Spotlight Workshop #1
+# SLIDES.md — Vibe Coding I: Foundations
+## CUNY AI Lab · Vibe Coding Series
 
 Companion to `index.html`. Keep this file in sync whenever slide titles or text content change.
 
@@ -7,9 +7,9 @@ Companion to `index.html`. Keep this file in sync whenever slide titles or text 
 
 ## Slide 1 — Title
 
-**Label:** CAIL Spotlight Workshop #1
-**Title:** Foundations: Coding with Generative AI
-**Date:** Spring 2026
+**Label:** CUNY AI Lab · Vibe Coding Series
+**Title:** Vibe Coding I: Foundations
+**Date:** Tuesday, September 22, 2026, 2:30–4:00 pm
 **Stage:** Infinite wheel artifact (`src/chainwheel.html`)
 
 ---
@@ -27,7 +27,7 @@ Part 1 — Coding & Development Basics:
 - Strengths & Limitations
 - Setting up an IDE
 - The Command Line
-- Initializing a Git Repo
+- What is Git / GitHub?
 
 Part 2 — Installation & Setup:
 - Installing Gemini CLI
@@ -233,35 +233,7 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 18 — Git Basics: Setting Up
-
-**Label:** Tool
-**Title:** Git Basics
-**Subtitle:** Setting Up
-
-**Stage (cmd-cards, fragments):**
-Each command is a card with text + CRT screen visualization.
-- `git init` — Initialize a repo · *screen: folder with green .git dot pops in*
-- `git add .` — Stage your changes · *screen: two files slide right toward dashed staging box*
-- `git commit -m "first commit"` — Save a snapshot · *screen: commit node circle pops in with hash label*
-
----
-
-## Slide 19 — Git Basics: Syncing & Inspecting
-
-**Label:** Tool
-**Title:** Git Basics
-**Subtitle:** Syncing & Inspecting
-
-**Stage (cmd-cards, fragments):**
-Each command is a card with text + CRT screen visualization.
-- `git push origin main` — Push to GitHub · *screen: commit node slides right toward cloud shape*
-- `git log --oneline` — View history · *screen: three commit nodes connected by lines stagger in*
-- `git status` — Check what changed · *screen: two files with green/bronze status dots stagger in*
-
----
-
-## Slide 20 — Logging into GitHub
+## Slide 18 — Logging into GitHub
 
 **Label:** Setup
 **Title:** Logging into GitHub
@@ -275,22 +247,7 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 21 — Staging, Committing, and Pushing to GitHub
-
-**Label:** Setup
-**Title:** Staging, Committing, and Pushing to GitHub
-
-**Stage (step-grid, fragments):**
-1. Create a README file: `touch README.md`
-2. Stage your files: `git add README.md`
-3. Commit your changes: `git commit -m "first commit"`
-4. Create a GitHub repo: `gh repo create my-project --public --source=.`
-5. Push your code to GitHub: `git push -u origin main`
-6. Visit **github.com/your-username/my-project** to see it live
-
----
-
-## Slide 22 — Section Break: Part 3
+## Slide 19 — Section Break: Part 3
 
 **Tag:** Part 2
 **Title:** Installation & Setup
@@ -299,7 +256,7 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 23 — Installing Gemini CLI
+## Slide 20 — Installing Gemini CLI
 
 **Label:** Setup
 **Title:** Installing Gemini CLI
@@ -310,7 +267,7 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 24 — Login Setup
+## Slide 21 — Login Setup
 
 **Label:** Setup
 **Title:** Login Setup
@@ -323,7 +280,7 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 25 — Troubleshooting
+## Slide 22 — Troubleshooting
 
 **Label:** Check-in
 **Title:** Troubleshooting
@@ -337,19 +294,20 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 26 — What's Next
+## Slide 23 — Upcoming Workshops
 
 **Label:** What's Next
-**Title:** What's Next
+**Title:** Upcoming Workshops
+**Subtitle:** New Media Lab (Room 7388.01), CUNY Graduate Center
 
 **Stage (step-grid, fragments):**
-- **Vibe-Coding Prototypes** — Tuesday, March 10 · 4:00–5:30 pm. Use AI from the command line to build a small prototype. We'll model prompting, project design, and troubleshooting — then you'll customize a feature of your own.
-- [Register for the next workshop](https://docs.google.com/forms/d/e/1FAIpQLSenSkDfoz3ftYiz6t5KJUEdYDGrbkUKmR6SGVC4j-fF6qNbdA/viewform) — Prerequisite: this workshop, or prior familiarity with the command line and Git/GitHub.
-- **In the meantime:** experiment with Gemini CLI on your own! Try building a small page, asking it to explain code, or exploring a new idea from your terminal.
+- **Vibe Coding II: Building a Prototype** — Tuesday, September 29 · 2:30–4:00 pm. Use AI from the command line to build a small prototype, then customize a feature of your own. Prerequisite: this workshop, or prior familiarity with the command line and Git/GitHub.
+- **Vibe Coding III: Bring Your Own Project Clinic** — Tuesday, October 13 · 2:30–4:00 pm. Prerequisite: Vibe Coding I & II, or comparable experience.
+- [Register for upcoming workshops](https://cail-workshop-registration.ailab-452.workers.dev/) — **In the meantime:** experiment with Gemini CLI on your own!
 
 ---
 
-## Slide 27 — Resources
+## Slide 24 — Resources
 
 **Label:** Resources
 **Title:** Links & References
@@ -370,4 +328,4 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-_Last synced: 2026-03-02 (split slide 18 git commands into two cmd-cards slides: 18 git-setup, 19 git-sync; renumbered 19→20 through 26→27; deck now 27 slides). Update both this file and `index.html` together._
+_Last synced: 2026-09-16 (Fall 2026 dates and Vibe Coding series titles; removed Git Basics: Setting Up, Git Basics: Syncing & Inspecting, and Staging/Committing/Pushing slides; deck now 24 slides). Update both this file and `index.html` together._
