@@ -905,10 +905,11 @@
             <span class="agenda-section-title">Part 3 — Installation &amp; Setup</span>
             <span class="agenda-section-time">30m</span>
           </div>
-          <a class="agenda-item" href="#20"><span class="agenda-item-label">Installing Gemini CLI</span></a>
-          <a class="agenda-item" href="#21"><span class="agenda-item-label">Login Step</span></a>
-          <a class="agenda-item" href="#23"><span class="agenda-item-label">Upcoming Workshops</span></a>
-          <a class="agenda-item" href="#24"><span class="agenda-item-label">Links &amp; Resources</span></a>
+          <a class="agenda-item" href="#20"><span class="agenda-item-label">Your CUNY AI Lab API Key</span></a>
+          <a class="agenda-item" href="#21"><span class="agenda-item-label">Installing Pi</span></a>
+          <a class="agenda-item" href="#22"><span class="agenda-item-label">API Key &amp; Models</span></a>
+          <a class="agenda-item" href="#24"><span class="agenda-item-label">Upcoming Workshops</span></a>
+          <a class="agenda-item" href="#25"><span class="agenda-item-label">Links &amp; Resources</span></a>
         </div>
 
       </div>
@@ -954,7 +955,7 @@
       <div class="stageCenter">
         <div class="stageInner">
           <div class="stageBig">Live walkthrough: building something from scratch with an AI coding agent</div>
-          <div class="stageHint">Observe how a set of prompts via Gemini CLI turns a plain-language idea into working code, step by step, inside VS Code.</div>
+          <div class="stageHint">Observe how a set of prompts via Pi, our AI coding agent, turns a plain-language idea into working code, step by step, inside VS Code.</div>
         </div>
       </div>
     </div>
@@ -1086,7 +1087,7 @@
           <ul class="stageList">
             <li>Free, open-source, and runs on Mac, Windows, and Linux</li>
             <li>Built-in terminal, Git support, and thousands of extensions</li>
-            <li>Where AI coding agents (like Gemini CLI) do their work</li>
+            <li>Where AI coding agents (like Pi) do their work</li>
           </ul>
         </div>
       </div>
@@ -1345,15 +1346,32 @@ winget install GitHub.cli  # Windows</span></div></div>
     <div class="content">
       <div class="break-tag">Part 3</div>
       <h2>Installation &amp; Setup</h2>
-      <p class="break-sub">Getting Gemini CLI running on your machine</p>
+      <p class="break-sub">Getting Pi and CUNY AI Lab models running on your machine</p>
     </div>
   </section>
 
-  <!-- 20 · INSTALLING GEMINI CLI -->
-  <section class="slide" role="group" aria-roledescription="slide" data-slide="install" aria-label="Installing Gemini CLI">
+  <!-- 20 · PLACEHOLDER: CUNY AI LAB GATEWAY & API KEY (Steve) -->
+  <section class="slide" role="group" aria-roledescription="slide" data-slide="api-key" aria-label="Your CUNY AI Lab API Key">
+    <div class="content">
+      <div class="label">Coming Soon</div>
+      <h2>Your CUNY AI Lab API Key</h2>
+    </div>
+    <div class="stage">
+      <div class="stageCenter">
+        <div class="stageInner">
+          <div class="stageBig">Placeholder: Steve&rsquo;s introduction to the CUNY AI Lab gateway</div>
+          <div class="stageHint">What the gateway is, how to get your personal API key, and how to keep it safe. You&rsquo;ll paste the key during setup on the next slides.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 21 · INSTALLING PI -->
+  <section class="slide" role="group" aria-roledescription="slide" data-slide="install" aria-label="Installing Pi">
     <div class="content">
       <div class="label">Setup</div>
-      <h2>Installing Gemini CLI</h2>
+      <h2>Installing Pi</h2>
+      <h3>Our AI coding agent, connected to CUNY AI Lab models</h3>
     </div>
     <div class="stage">
       <div class="stageCompare">
@@ -1361,46 +1379,48 @@ winget install GitHub.cli  # Windows</span></div></div>
           <div class="col-tag">Windows</div>
           <div class="col-title">PowerShell</div>
           <div class="col-sub">
-            1. Install Node.js LTS from <a href="https://nodejs.org/en/download" target="_blank" rel="noopener">nodejs.org</a><br>
-            2. Reopen PowerShell<br>
-            3. Install Gemini CLI:
-            <span class="code-block">npm install -g @google/gemini-cli</span>
+            1. Install Node.js (22.19 or newer):
+            <span class="code-block">winget install OpenJS.NodeJS.LTS</span>
+            2. Close PowerShell and open a new window<br>
+            3. Check with <code>node --version</code><br>
+            4. Run the workshop setup:
+            <span class="code-block">npx.cmd @cuny-ai-lab/pi-workshop</span>
           </div>
         </div>
         <div class="col">
           <div class="col-tag">macOS</div>
           <div class="col-title">Terminal</div>
           <div class="col-sub">
-            1. Install Homebrew from <a href="https://brew.sh/" target="_blank" rel="noopener">brew.sh</a><br>
-            2. Add Homebrew to PATH:
-            <span class="code-block">echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' \
-  >> ~/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"</span>
-            3. Install Gemini CLI:
-            <span class="code-block">brew install gemini-cli</span>
+            1. Install Node.js (22.19 or newer) from <a href="https://nodejs.org/en/download" target="_blank" rel="noopener">nodejs.org</a><br>
+            2. Open a new Terminal window<br>
+            3. Check with <code>node --version</code><br>
+            4. Run the workshop setup:
+            <span class="code-block">npx @cuny-ai-lab/pi-workshop</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 21 · LOGIN SETUP -->
-  <section class="slide" role="group" aria-roledescription="slide" data-slide="login" aria-label="Login setup">
+  <!-- 22 · API KEY & MODELS -->
+  <section class="slide" role="group" aria-roledescription="slide" data-slide="login" aria-label="API key and models">
     <div class="content">
       <div class="label">Setup</div>
-      <h2>Login Step</h2>
+      <h2>API Key &amp; Models</h2>
     </div>
     <div class="stage">
       <div class="step-grid">
-        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">Run <code>gemini</code> in your terminal to start authentication</div></div>
-        <div class="step-row frag"><div class="step-num">2</div><div class="step-text">Choose "Login with Google" and follow the browser prompt</div></div>
-        <div class="step-row frag"><div class="step-num">3</div><div class="step-text">Free tier: 60 requests/min · 1,000 requests/day</div></div>
-        <div class="step-row frag"><div class="step-num" style="background:var(--accent);">?</div><div class="step-text">Having technical issues? Just ask!</div></div>
+        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">When LazyPi offers to install Pi and its packages, accept the defaults (install all)</div></div>
+        <div class="step-row frag"><div class="step-num">2</div><div class="step-text">At <code>CUNY AI Lab API key:</code> paste your key<br><span style="opacity:0.7;">Your typing stays hidden, and the key is saved securely in Pi</span></div></div>
+        <div class="step-row frag"><div class="step-num">3</div><div class="step-text">Start Pi:<span class="code-block">pi          # macOS
+pi.cmd      # Windows</span></div></div>
+        <div class="step-row frag"><div class="step-num">4</div><div class="step-text">Type <code>/model</code> and choose a CUNY AI Lab model</div></div>
+        <div class="step-row frag"><div class="step-num" style="background:var(--accent);">?</div><div class="step-text">Something off? Run the health check, or just ask!<span class="code-block">npx @cuny-ai-lab/pi-workshop --doctor</span></div></div>
       </div>
     </div>
   </section>
 
-  <!-- 22 · TROUBLESHOOTING -->
+  <!-- 23 · TROUBLESHOOTING -->
   <section class="slide" role="group" aria-roledescription="slide" data-slide="troubleshoot" aria-label="Troubleshooting">
     <div class="content">
       <div class="label">Check-in</div>
@@ -1410,7 +1430,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"</span>
       <div class="stageCenter">
         <div class="stageInner">
           <div class="stageBig">Having trouble installing or logging in?</div>
-          <div class="stageHint">VS Code, GitHub CLI, Git, Gemini CLI — if anything didn't work, now's the time to fix it together.</div>
+          <div class="stageHint">VS Code, GitHub CLI, Git, Pi — if anything didn't work, now's the time to fix it together.</div>
           <ul class="stageList" style="margin-top:clamp(24px,3vw,40px); padding-top:clamp(16px,2vw,24px); border-top:1px solid rgba(255,255,255,0.08);">
             <li>Raise your hand — we'll come to you</li>
             <li>Help a neighbor if you're all set</li>
@@ -1422,7 +1442,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"</span>
   </section>
 
 
-  <!-- 23 · UPCOMING WORKSHOPS -->
+  <!-- 24 · UPCOMING WORKSHOPS -->
   <section class="slide" role="group" aria-roledescription="slide" data-slide="nextsteps" aria-label="Upcoming Workshops">
     <div class="content">
       <div class="label">What's Next</div>
@@ -1441,13 +1461,13 @@ eval "$(/opt/homebrew/bin/brew shellenv)"</span>
         </div>
         <div class="step-row frag">
           <div class="step-num">3</div>
-          <div class="step-text"><a href="https://cail-workshop-registration.ailab-452.workers.dev/" target="_blank" rel="noopener">Register for upcoming workshops</a><br><span style="opacity:0.7;"><strong>In the meantime:</strong> experiment with Gemini CLI on your own!</span></div>
+          <div class="step-text"><a href="https://cail-workshop-registration.ailab-452.workers.dev/" target="_blank" rel="noopener">Register for upcoming workshops</a><br><span style="opacity:0.7;"><strong>In the meantime:</strong> experiment with Pi on your own!</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 24 · RESOURCES -->
+  <!-- 25 · RESOURCES -->
   <section class="slide" role="group" aria-roledescription="slide" data-slide="resources" aria-label="Resources">
     <div class="content">
       <div class="label">Resources</div>
@@ -1514,12 +1534,12 @@ eval "$(/opt/homebrew/bin/brew shellenv)"</span>
               <div class="res-desc">VS Code documentation — setup, extensions, integrated terminal</div>
             </li>
             <li>
-              <a href="https://github.com/google-gemini/gemini-cli" target="_blank" rel="noopener">github.com/google-gemini/gemini-cli</a>
-              <div class="res-desc">Gemini CLI — open-source AI coding agent that runs in your terminal</div>
+              <a href="https://pi.dev" target="_blank" rel="noopener">pi.dev</a>
+              <div class="res-desc">Pi — open-source AI coding agent that runs in your terminal</div>
             </li>
             <li>
-              <a href="https://developers.googleblog.com/gemini-cli-vs-code-native-diffing-context-aware-workflows/" target="_blank" rel="noopener">developers.googleblog.com/gemini-cli-vs-code…</a>
-              <div class="res-desc">Gemini CLI + VS Code — native diffing and context-aware workflows</div>
+              <a href="https://github.com/CUNY-AI-Lab/pi-workshop" target="_blank" rel="noopener">github.com/CUNY-AI-Lab/pi-workshop</a>
+              <div class="res-desc">CUNY AI Lab × Pi — setup instructions, troubleshooting, and uninstall</div>
             </li>
             <li>
               <a href="https://docs.github.com" target="_blank" rel="noopener">docs.github.com</a>
@@ -1539,13 +1559,13 @@ eval "$(/opt/homebrew/bin/brew shellenv)"</span>
   <div class="footer-slider">
     <button class="footer-arrow" id="btn-prev" aria-label="Previous slide"><span aria-hidden="true">&#8592;</span></button>
     <div class="slider-track">
-      <input type="range" id="slide-scrubber" min="1" max="24" value="1" aria-label="Navigate to slide">
+      <input type="range" id="slide-scrubber" min="1" max="25" value="1" aria-label="Navigate to slide">
       <div class="slider-progress"></div>
       <div class="slider-thumb" aria-hidden="true"></div>
     </div>
     <button class="footer-arrow" id="btn-next" aria-label="Next slide"><span aria-hidden="true">&#8594;</span></button>
     <div class="footer-meta" aria-hidden="true">
-      <span id="slider-counter">1 / 24</span>
+      <span id="slider-counter">1 / 25</span>
       <span class="kbd">Space</span>
     </div>
   </div>

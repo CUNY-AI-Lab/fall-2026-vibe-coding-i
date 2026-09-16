@@ -30,7 +30,8 @@ Part 1 — Coding & Development Basics:
 - What is Git / GitHub?
 
 Part 2 — Installation & Setup:
-- Installing Gemini CLI
+- Your CUNY AI Lab API Key
+- Installing Pi
 - Login Setup
 - Exit Ticket
 - Next Steps
@@ -63,7 +64,7 @@ Part 2 — Installation & Setup:
 
 **Stage (stageCenter):**
 - **Big:** Live walkthrough: building something from scratch with an AI coding agent
-- **Hint:** Watch how a conversation with Gemini CLI turns a plain-language idea into working code — step by step, inside VS Code.
+- **Hint:** Watch how a conversation with Pi, our AI coding agent, turns a plain-language idea into working code — step by step, inside VS Code.
 
 ---
 
@@ -146,7 +147,7 @@ Part 2 — Installation & Setup:
 - **Why VS Code?**
   - Free, open-source, and runs on Mac, Windows, and Linux
   - Built-in terminal, Git support, and thousands of extensions
-  - Where AI coding agents (like Gemini CLI) do their work
+  - Where AI coding agents (like Pi) do their work
 
 ---
 
@@ -251,50 +252,65 @@ Each command is a card with text + CRT screen visualization.
 
 **Tag:** Part 2
 **Title:** Installation & Setup
-**Subtitle:** Getting Gemini CLI running on your machine
+**Subtitle:** Getting Pi and CUNY AI Lab models running on your machine
 **Accent:** `#2ea043` (green)
 
 ---
 
-## Slide 20 — Installing Gemini CLI
+## Slide 20 — Your CUNY AI Lab API Key (PLACEHOLDER)
 
-**Label:** Setup
-**Title:** Installing Gemini CLI
+**Label:** Coming Soon
+**Title:** Your CUNY AI Lab API Key
 
-**Stage (stageCompare):**
-- **Windows — PowerShell:** 1. Install Node.js LTS from nodejs.org → 2. Reopen PowerShell → 3. `npm install -g @google/gemini-cli`
-- **macOS — Terminal:** 1. Install Homebrew from brew.sh → 2. Add Homebrew to PATH → 3. `brew install gemini-cli`
+**Stage (stageCenter):**
+- **Big:** Placeholder: Steve's introduction to the CUNY AI Lab gateway
+- **Hint:** What the gateway is, how to get your personal API key, and how to keep it safe. You'll paste the key during setup on the next slides.
+
+> TODO (Steve): replace this placeholder with the gateway / API key section.
 
 ---
 
-## Slide 21 — Login Setup
+## Slide 21 — Installing Pi
 
 **Label:** Setup
-**Title:** Login Setup
+**Title:** Installing Pi
+**Subtitle:** Our AI coding agent, connected to CUNY AI Lab models
+
+**Stage (two-column compare):**
+- **Windows — PowerShell:** 1. `winget install OpenJS.NodeJS.LTS` (Node.js 22.19 or newer) → 2. Close PowerShell and open a new window → 3. Check with `node --version` → 4. `npx.cmd @cuny-ai-lab/pi-workshop`
+- **macOS — Terminal:** 1. Install Node.js (22.19 or newer) from nodejs.org → 2. Open a new Terminal window → 3. Check with `node --version` → 4. `npx @cuny-ai-lab/pi-workshop`
+
+---
+
+## Slide 22 — API Key & Models
+
+**Label:** Setup
+**Title:** API Key & Models
 
 **Stage (step-grid, fragments):**
-1. Run `gemini` in your terminal to start authentication
-2. Choose "Login with Google" and follow the browser prompt
-3. Free tier: 60 requests/min · 1,000 requests/day
-4. Having technical issues? Just ask!
+1. When LazyPi offers to install Pi and its packages, accept the defaults (install all)
+2. At `CUNY AI Lab API key:` paste your key — your typing stays hidden, and the key is saved securely in Pi
+3. Start Pi: `pi` (macOS) / `pi.cmd` (Windows)
+4. Type `/model` and choose a CUNY AI Lab model
+- **?** Something off? Run the health check (`npx @cuny-ai-lab/pi-workshop --doctor`), or just ask!
 
 ---
 
-## Slide 22 — Troubleshooting
+## Slide 23 — Troubleshooting
 
 **Label:** Check-in
 **Title:** Troubleshooting
 
 **Stage (stageCenter):**
 - **Big:** Having trouble installing or logging in?
-- **Hint:** VS Code, GitHub CLI, Git, Gemini CLI — if anything didn't work, now's the time to fix it together.
+- **Hint:** VS Code, GitHub CLI, Git, Pi — if anything didn't work, now's the time to fix it together.
 - Raise your hand — we'll come to you
 - Help a neighbor if you're all set
 - No issue too small to ask about
 
 ---
 
-## Slide 23 — Upcoming Workshops
+## Slide 24 — Upcoming Workshops
 
 **Label:** What's Next
 **Title:** Upcoming Workshops
@@ -303,11 +319,11 @@ Each command is a card with text + CRT screen visualization.
 **Stage (step-grid, fragments):**
 - **Vibe Coding II: Building a Prototype** — Tuesday, September 29 · 2:30–4:00 pm. Use AI from the command line to build a small prototype, then customize a feature of your own. Prerequisite: this workshop, or prior familiarity with the command line and Git/GitHub.
 - **Vibe Coding III: Bring Your Own Project Clinic** — Tuesday, October 13 · 2:30–4:00 pm. Prerequisite: Vibe Coding I & II, or comparable experience.
-- [Register for upcoming workshops](https://cail-workshop-registration.ailab-452.workers.dev/) — **In the meantime:** experiment with Gemini CLI on your own!
+- [Register for upcoming workshops](https://cail-workshop-registration.ailab-452.workers.dev/) — **In the meantime:** experiment with Pi on your own!
 
 ---
 
-## Slide 24 — Resources
+## Slide 25 — Resources
 
 **Label:** Resources
 **Title:** Links & References
@@ -322,10 +338,10 @@ Each command is a card with text + CRT screen visualization.
 - [github.com/cuny-ai-lab](https://github.com/cuny-ai-lab) — CUNY AI Lab on GitHub — open source repos, workshop decks, datasets
 - [cuny-ai-lab.github.io/fall-2026-vibe-coding-ii](https://cuny-ai-lab.github.io/fall-2026-vibe-coding-ii/) — Vibe Coding II: Building a Prototype — companion workshop deck
 - [code.visualstudio.com/docs](https://code.visualstudio.com/docs) — VS Code documentation — setup, extensions, integrated terminal
-- [github.com/google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) — Gemini CLI — open-source AI coding agent that runs in your terminal
-- [developers.googleblog.com/gemini-cli-vs-code…](https://developers.googleblog.com/gemini-cli-vs-code-native-diffing-context-aware-workflows/) — Gemini CLI + VS Code — native diffing and context-aware workflows
+- [pi.dev](https://pi.dev) — Pi — open-source AI coding agent that runs in your terminal
+- [github.com/CUNY-AI-Lab/pi-workshop](https://github.com/CUNY-AI-Lab/pi-workshop) — CUNY AI Lab × Pi — setup instructions, troubleshooting, and uninstall
 - [docs.github.com](https://docs.github.com) — GitHub documentation — repos, Pages, pull requests, Actions
 
 ---
 
-_Last synced: 2026-09-16 (Fall 2026 dates and Vibe Coding series titles; removed Git Basics: Setting Up, Git Basics: Syncing & Inspecting, and Staging/Committing/Pushing slides; deck now 24 slides). Update both this file and `index.html` together._
+_Last synced: 2026-09-16 (Fall 2026 dates and Vibe Coding series titles; removed Git Basics: Setting Up, Git Basics: Syncing & Inspecting, and Staging/Committing/Pushing slides; Pi setup and API key placeholder slide; deck now 25 slides). Update both this file and `index.html` together._
