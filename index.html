@@ -893,8 +893,8 @@
             <span class="agenda-section-title">Part 2 — Development Environment</span>
             <span class="agenda-section-time">30m</span>
           </div>
-          <a class="agenda-item" href="#11"><span class="agenda-item-label">What is VS Code?</span></a>
-          <a class="agenda-item" href="#12"><span class="agenda-item-label">Setting up an IDE</span></a>
+          <a class="agenda-item" href="#11"><span class="agenda-item-label">Inspecting Your Code</span></a>
+          <a class="agenda-item" href="#12"><span class="agenda-item-label">Leveling Up: IDEs</span></a>
           <a class="agenda-item" href="#13"><span class="agenda-item-label">The Command Line</span></a>
           <a class="agenda-item" href="#17"><span class="agenda-item-label">What is Git / GitHub?</span></a>
           <a class="agenda-item" href="#18"><span class="agenda-item-label">Getting Started with GitHub</span></a>
@@ -955,7 +955,7 @@
       <div class="stageCenter">
         <div class="stageInner">
           <div class="stageBig">Live walkthrough: building something from scratch with an AI coding agent</div>
-          <div class="stageHint">Observe how a set of prompts via Pi, our AI coding agent, turns a plain-language idea into working code, step by step, inside VS Code.</div>
+          <div class="stageHint">Observe how a set of prompts via Pi, our AI coding agent, turns a plain-language idea into working code, step by step, right in the terminal.</div>
         </div>
       </div>
     </div>
@@ -1072,40 +1072,59 @@
     </div>
   </section>
 
-  <!-- 11 · WHAT IS VS CODE? -->
-  <section class="slide" role="group" aria-roledescription="slide" data-slide="vscode-intro" aria-label="What is VS Code?">
+  <!-- 11 · INSPECTING YOUR CODE -->
+  <section class="slide" role="group" aria-roledescription="slide" data-slide="inspect-code" aria-label="Inspecting your code">
     <div class="content">
       <div class="label">Concept</div>
-      <h2>What is VS Code?</h2>
+      <h2>Inspecting Your Code</h2>
+      <h3>No extra software needed: the apps already on your computer are enough to look at what the agent builds</h3>
     </div>
     <div class="stage">
-      <div class="stageCenter">
-        <div class="stageInner">
-          <div class="stageBig">A free code editor that works like a smart writing desk for programmers</div>
-          <div class="stageHint">It highlights your code, catches errors, and connects to tools like Git and AI assistants — all in one window.</div>
-          <div class="stageTitle" style="margin-top:clamp(24px,3vw,40px); padding-top:clamp(16px,2vw,24px); border-top:1px solid rgba(255,255,255,0.08);">Why VS Code?</div>
-          <ul class="stageList">
-            <li>Free, open-source, and runs on Mac, Windows, and Linux</li>
-            <li>Built-in terminal, Git support, and thousands of extensions</li>
-            <li>Where AI coding agents (like Pi) do their work</li>
-          </ul>
+      <div class="stageCompare">
+        <div class="col">
+          <div class="col-tag">macOS</div>
+          <div class="col-title">Finder + TextEdit</div>
+          <div class="col-sub">
+            <strong>Browse files:</strong> open the project folder in Finder<br>
+            <strong>Quick peek:</strong> select a file and press <strong>Space</strong><br>
+            <strong>Read or edit:</strong> right-click &rarr; <strong>Open With &rarr; TextEdit</strong><br>
+            <span style="opacity:0.7;">Tip: in TextEdit &rarr; Settings, turn on &ldquo;Display HTML files as HTML code&rdquo;</span><br>
+            <strong>See it run:</strong> double-click <code>index.html</code> to open it in your browser
+          </div>
+        </div>
+        <div class="col">
+          <div class="col-tag">Windows</div>
+          <div class="col-title">File Explorer + Notepad</div>
+          <div class="col-sub">
+            <strong>Browse files:</strong> open the project folder in File Explorer<br>
+            <strong>Show extensions:</strong> View &rarr; Show &rarr; <strong>File name extensions</strong><br>
+            <strong>Read or edit:</strong> right-click &rarr; <strong>Open with &rarr; Notepad</strong><br>
+            <strong>See it run:</strong> double-click <code>index.html</code> to open it in your browser
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 12 · IDE SETUP -->
-  <section class="slide" role="group" aria-roledescription="slide" data-slide="vscode" aria-label="Setting up an Interactive Development Environment">
+  <!-- 12 · LEVELING UP: IDES -->
+  <section class="slide" role="group" aria-roledescription="slide" data-slide="ide" aria-label="Leveling up: code editors and IDEs">
     <div class="content">
-      <div class="label">Setup</div>
-      <h2>Setting up an Interactive Development Environment</h2>
+      <div class="label">Looking Ahead</div>
+      <h2>Leveling Up: Code Editors &amp; IDEs</h2>
     </div>
     <div class="stage">
-      <div class="step-grid">
-        <div class="step-row"><div class="step-num">1</div><div class="step-text">Download VS Code from <a href="https://code.visualstudio.com" target="_blank" rel="noopener"><strong>code.visualstudio.com</strong></a></div></div>
-        <div class="step-row"><div class="step-num">2</div><div class="step-text">Install and open VS Code on your machine</div></div>
-        <div class="step-row"><div class="step-num">3</div><div class="step-text">Open the integrated terminal: <strong>Terminal &rarr; New Terminal</strong> in the top menu bar (or <strong>Ctrl+`</strong>)</div></div>
-        <div class="step-row"><div class="step-num">4</div><div class="step-text">Confirm it works — you should see a command prompt at the bottom</div></div>
+      <div class="stageCenter">
+        <div class="stageInner">
+          <div class="stageBig">As your projects grow, you&rsquo;ll want an IDE (Integrated Development Environment)</div>
+          <div class="stageHint">Code highlighting, error checking, a built-in terminal, Git, and AI assistants, all in one window. You don&rsquo;t need one today.</div>
+          <div class="stageTitle" style="margin-top:clamp(24px,3vw,40px); padding-top:clamp(16px,2vw,24px); border-top:1px solid rgba(255,255,255,0.08);">Some popular options</div>
+          <ul class="stageList">
+            <li><strong>Visual Studio Code</strong>: free, runs on macOS, Windows, and Linux</li>
+            <li><strong>Zed</strong>: fast, open-source editor with built-in AI features</li>
+            <li><strong>Cursor</strong> or <strong>Windsurf</strong>: editors built around AI coding assistants</li>
+            <li><strong>JetBrains IDEs</strong> (PyCharm, WebStorm): full-featured, free for students</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -1133,12 +1152,11 @@
   </section>
 
   <!-- 14 · OPENING YOUR TERMINAL -->
-  <section class="slide slide-aside" role="group" aria-roledescription="slide" data-slide="cli-open" aria-label="Opening your terminal">
+  <section class="slide" role="group" aria-roledescription="slide" data-slide="cli-open" aria-label="Opening your terminal">
     <div class="content">
-      <div class="label">Outside VS Code</div>
-      <h2>Opening a Standalone Terminal</h2>
-      <h3>(You won't need this today)</h3>
-      <div class="aside-note">It's the same terminal. VS Code just puts one inside the editor so you don't have to switch windows.</div>
+      <div class="label">Setup</div>
+      <h2>Opening Your Terminal</h2>
+      <h3>This is where you'll run commands and Pi today</h3>
     </div>
     <div class="stage">
       <div class="stageCompare">
@@ -1430,7 +1448,7 @@ pi.cmd      # Windows</span></div></div>
       <div class="stageCenter">
         <div class="stageInner">
           <div class="stageBig">Having trouble installing or logging in?</div>
-          <div class="stageHint">VS Code, GitHub CLI, Git, Pi — if anything didn't work, now's the time to fix it together.</div>
+          <div class="stageHint">Terminal, GitHub CLI, Git, Pi — if anything didn't work, now's the time to fix it together.</div>
           <ul class="stageList" style="margin-top:clamp(24px,3vw,40px); padding-top:clamp(16px,2vw,24px); border-top:1px solid rgba(255,255,255,0.08);">
             <li>Raise your hand — we'll come to you</li>
             <li>Help a neighbor if you're all set</li>
@@ -1529,10 +1547,6 @@ pi.cmd      # Windows</span></div></div>
         <div class="res-group">
           <div class="res-group-title">Tools &amp; Docs</div>
           <ul class="res-list">
-            <li>
-              <a href="https://code.visualstudio.com/docs" target="_blank" rel="noopener">code.visualstudio.com/docs</a>
-              <div class="res-desc">VS Code documentation — setup, extensions, integrated terminal</div>
-            </li>
             <li>
               <a href="https://pi.dev" target="_blank" rel="noopener">pi.dev</a>
               <div class="res-desc">Pi — open-source AI coding agent that runs in your terminal</div>

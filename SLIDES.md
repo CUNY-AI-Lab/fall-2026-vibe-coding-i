@@ -25,7 +25,8 @@ Part 1 — Coding & Development Basics:
 - Icebreaker (10m)
 - What is a Large Language Model?
 - Strengths & Limitations
-- Setting up an IDE
+- Inspecting Your Code
+- Leveling Up: IDEs
 - The Command Line
 - What is Git / GitHub?
 
@@ -64,7 +65,7 @@ Part 2 — Installation & Setup:
 
 **Stage (stageCenter):**
 - **Big:** Live walkthrough: building something from scratch with an AI coding agent
-- **Hint:** Watch how a conversation with Pi, our AI coding agent, turns a plain-language idea into working code — step by step, inside VS Code.
+- **Hint:** Watch how a conversation with Pi, our AI coding agent, turns a plain-language idea into working code — step by step, right in the terminal.
 
 ---
 
@@ -136,31 +137,31 @@ Part 2 — Installation & Setup:
 
 ---
 
-## Slide 11 — What is VS Code?
+## Slide 11 — Inspecting Your Code
 
 **Label:** Concept
-**Title:** What is VS Code?
+**Title:** Inspecting Your Code
+**Subtitle:** No extra software needed: the apps already on your computer are enough to look at what the agent builds
 
-**Stage (stageCenter):**
-- **Big:** A free code editor that works like a smart writing desk for programmers
-- **Hint:** It highlights your code, catches errors, and connects to tools like Git and AI assistants — all in one window.
-- **Why VS Code?**
-  - Free, open-source, and runs on Mac, Windows, and Linux
-  - Built-in terminal, Git support, and thousands of extensions
-  - Where AI coding agents (like Pi) do their work
+**Stage (stageCompare):**
+- **macOS — Finder + TextEdit:** Browse files in Finder · Quick peek: select a file and press Space · Read or edit: right-click → Open With → TextEdit (tip: in TextEdit → Settings, turn on "Display HTML files as HTML code") · See it run: double-click `index.html` to open it in your browser
+- **Windows — File Explorer + Notepad:** Browse files in File Explorer · Show extensions: View → Show → File name extensions · Read or edit: right-click → Open with → Notepad · See it run: double-click `index.html` to open it in your browser
 
 ---
 
-## Slide 12 — Setting up an Interactive Development Environment
+## Slide 12 — Leveling Up: Code Editors & IDEs
 
-**Label:** Setup
-**Title:** Setting up an Interactive Development Environment
+**Label:** Looking Ahead
+**Title:** Leveling Up: Code Editors & IDEs
 
-**Stage steps:**
-1. Download + install VS Code
-2. Sign in with your GitHub profile
-3. Add the GitHub extension; start tracking your project
-4. Open the integrated terminal — this is where CLI + Git live
+**Stage (stageCenter):**
+- **Big:** As your projects grow, you'll want an IDE (Integrated Development Environment)
+- **Hint:** Code highlighting, error checking, a built-in terminal, Git, and AI assistants, all in one window. You don't need one today.
+- **Some popular options:**
+  - **Visual Studio Code** — free, runs on macOS, Windows, and Linux
+  - **Zed** — fast, open-source editor with built-in AI features
+  - **Cursor** or **Windsurf** — editors built around AI coding assistants
+  - **JetBrains IDEs** (PyCharm, WebStorm) — full-featured, free for students
 
 ---
 
@@ -181,16 +182,13 @@ Part 2 — Installation & Setup:
 
 ## Slide 14 — Opening Your Terminal
 
-**Label:** Outside VS Code
-**Title:** Opening a Standalone Terminal
-**Subtitle:** (You won't need this today)
-**Visual:** slide-aside (dashed border, FYI badge, muted heading)
+**Label:** Setup
+**Title:** Opening Your Terminal
+**Subtitle:** This is where you'll run commands and Pi today
 
 **Stage (stageCompare):**
 - **macOS — Terminal:** 1. Press Cmd + Space → 2. Type "Terminal" → 3. Press Return
 - **Windows — PowerShell:** 1. Press the Windows key → 2. Type "PowerShell" → 3. Press Enter
-
-**Note:** It's the same terminal. VS Code just puts one inside the editor so you don't have to switch windows.
 
 ---
 
@@ -303,7 +301,7 @@ Each command is a card with text + CRT screen visualization.
 
 **Stage (stageCenter):**
 - **Big:** Having trouble installing or logging in?
-- **Hint:** VS Code, GitHub CLI, Git, Pi — if anything didn't work, now's the time to fix it together.
+- **Hint:** Terminal, GitHub CLI, Git, Pi — if anything didn't work, now's the time to fix it together.
 - Raise your hand — we'll come to you
 - Help a neighbor if you're all set
 - No issue too small to ask about
@@ -337,7 +335,6 @@ Each command is a card with text + CRT screen visualization.
 - [aitoolkit.gc.commons.edu](https://aitoolkit.gc.commons.edu) — GC AI Toolkit — curated tools and resources for the Graduate Center community
 - [github.com/cuny-ai-lab](https://github.com/cuny-ai-lab) — CUNY AI Lab on GitHub — open source repos, workshop decks, datasets
 - [cuny-ai-lab.github.io/fall-2026-vibe-coding-ii](https://cuny-ai-lab.github.io/fall-2026-vibe-coding-ii/) — Vibe Coding II: Building a Prototype — companion workshop deck
-- [code.visualstudio.com/docs](https://code.visualstudio.com/docs) — VS Code documentation — setup, extensions, integrated terminal
 - [pi.dev](https://pi.dev) — Pi — open-source AI coding agent that runs in your terminal
 - [github.com/CUNY-AI-Lab/pi-workshop](https://github.com/CUNY-AI-Lab/pi-workshop) — CUNY AI Lab × Pi — setup instructions, troubleshooting, and uninstall
 - [docs.github.com](https://docs.github.com) — GitHub documentation — repos, Pages, pull requests, Actions
