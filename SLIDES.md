@@ -315,8 +315,9 @@ Each command is a card with text + CRT screen visualization.
 **Subtitle:** New Media Lab (Room 7388.01), CUNY Graduate Center
 
 **Stage (step-grid, fragments):**
-- **Vibe Coding II: Building a Prototype** — Tuesday, September 29 · 2:30–4:00 pm. Use AI from the command line to build a small prototype, then customize a feature of your own. Prerequisite: this workshop, or prior familiarity with the command line and Git/GitHub.
+- **Vibe Coding II: Building a Prototype** — Tuesday, September 29 · 2:30–4:00 pm. Build a small prototype with Pi. Prerequisite: this workshop, or familiarity with the command line and Git/GitHub.
 - **Vibe Coding III: Bring Your Own Project Clinic** — Tuesday, October 13 · 2:30–4:00 pm. Prerequisite: Vibe Coding I & II, or comparable experience.
+- **Co-Working Sessions** — 2:00–4:00 pm · Thursday, October 29 · Tuesday, November 17 · Thursday, December 3
 - [Register for upcoming workshops](https://cail-workshop-registration.ailab-452.workers.dev/) — **In the meantime:** experiment with Pi on your own!
 - **! Mind your quota** — Your API key comes with a limited quota. Keep an eye on it as you experiment so you don't burn through it before the next workshop.
 
