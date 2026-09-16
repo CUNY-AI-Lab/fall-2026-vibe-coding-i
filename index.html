@@ -891,7 +891,7 @@
         <div class="agenda-section">
           <div class="agenda-section-head">
             <span class="agenda-section-title">Part 2 — Development Environment</span>
-            <span class="agenda-section-time">30m</span>
+            <span class="agenda-section-time">25m</span>
           </div>
           <a class="agenda-item" href="#11"><span class="agenda-item-label">Inspecting Your Code</span></a>
           <a class="agenda-item" href="#12"><span class="agenda-item-label">Leveling Up: IDEs</span></a>
@@ -903,11 +903,11 @@
         <div class="agenda-section">
           <div class="agenda-section-head">
             <span class="agenda-section-title">Part 3 — Installation &amp; Setup</span>
-            <span class="agenda-section-time">30m</span>
+            <span class="agenda-section-time">35m</span>
           </div>
-          <a class="agenda-item" href="#20"><span class="agenda-item-label">Your CUNY AI Lab API Key</span></a>
+          <a class="agenda-item" href="#20"><span class="agenda-item-label">Your CUNY AI Lab API Key &amp; Quota</span></a>
           <a class="agenda-item" href="#21"><span class="agenda-item-label">Installing Pi</span></a>
-          <a class="agenda-item" href="#22"><span class="agenda-item-label">API Key &amp; Models</span></a>
+          <a class="agenda-item" href="#22"><span class="agenda-item-label">Connect Pi to CUNY AI Lab</span></a>
           <a class="agenda-item" href="#24"><span class="agenda-item-label">Upcoming Workshops</span></a>
           <a class="agenda-item" href="#25"><span class="agenda-item-label">Links &amp; Resources</span></a>
         </div>
@@ -1349,8 +1349,7 @@
     </div>
     <div class="stage">
       <div class="step-grid">
-        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">Install the GitHub CLI — download the installer at <a href="https://cli.github.com" target="_blank" rel="noopener">cli.github.com</a> or run:<span class="code-block">brew install gh          # macOS
-winget install GitHub.cli  # Windows</span></div></div>
+        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">Install the GitHub CLI:<br><strong>macOS:</strong> download and run the installer from <a href="https://cli.github.com" target="_blank" rel="noopener">cli.github.com</a><br><strong>Windows:</strong> run the command below, then open a new PowerShell window<span class="code-block">winget install GitHub.cli</span></div></div>
         <div class="step-row frag"><div class="step-num">2</div><div class="step-text">Start login from your terminal:<span class="code-block">gh auth login</span></div></div>
         <div class="step-row frag"><div class="step-num">3</div><div class="step-text">Choose <strong>GitHub.com</strong> → <strong>HTTPS</strong> → <strong>Login with a web browser</strong></div></div>
         <div class="step-row frag"><div class="step-num">4</div><div class="step-text">Copy the one-time code, press Enter, and approve in the browser window that opens</div></div>
@@ -1369,16 +1368,16 @@ winget install GitHub.cli  # Windows</span></div></div>
   </section>
 
   <!-- 20 · PLACEHOLDER: CUNY AI LAB GATEWAY & API KEY (Steve) -->
-  <section class="slide" role="group" aria-roledescription="slide" data-slide="api-key" aria-label="Your CUNY AI Lab API Key">
+  <section class="slide" role="group" aria-roledescription="slide" data-slide="api-key" aria-label="Your CUNY AI Lab API Key and Quota">
     <div class="content">
       <div class="label">Coming Soon</div>
-      <h2>Your CUNY AI Lab API Key</h2>
+      <h2>Your CUNY AI Lab API Key &amp; Quota</h2>
     </div>
     <div class="stage">
       <div class="stageCenter">
         <div class="stageInner">
-          <div class="stageBig">Placeholder: Steve&rsquo;s introduction to the CUNY AI Lab gateway</div>
-          <div class="stageHint">What the gateway is, how to get your personal API key, and how to keep it safe. You&rsquo;ll paste the key during setup on the next slides.</div>
+          <div class="stageBig">Placeholder: Steve&rsquo;s introduction to the CUNY AI Lab gateway, API keys, and quota</div>
+          <div class="stageHint">What the gateway is, how to get your personal API key and keep it safe, and how your quota works so you don&rsquo;t run out before the next workshop. You&rsquo;ll paste the key during setup on the next slides.</div>
         </div>
       </div>
     </div>
@@ -1420,11 +1419,11 @@ winget install GitHub.cli  # Windows</span></div></div>
     </div>
   </section>
 
-  <!-- 22 · API KEY & MODELS -->
-  <section class="slide" role="group" aria-roledescription="slide" data-slide="login" aria-label="API key and models">
+  <!-- 22 · CONNECT PI TO CUNY AI LAB -->
+  <section class="slide" role="group" aria-roledescription="slide" data-slide="login" aria-label="Connect Pi to CUNY AI Lab">
     <div class="content">
       <div class="label">Setup</div>
-      <h2>API Key &amp; Models</h2>
+      <h2>Connect Pi to CUNY AI Lab</h2>
     </div>
     <div class="stage">
       <div class="step-grid">
@@ -1510,6 +1509,10 @@ pi.cmd      # Windows</span></div></div>
               <div class="res-desc">CUNY AI Lab — home page, announcements, and model notes</div>
             </li>
             <li>
+              <a href="https://ailab.gc.cuny.edu/events/" target="_blank" rel="noopener">ailab.gc.cuny.edu/events</a>
+              <div class="res-desc">Upcoming workshops, co-working sessions, and registration</div>
+            </li>
+            <li>
               <a href="https://ailab.gc.cuny.edu/resources" target="_blank" rel="noopener">ailab.gc.cuny.edu/resources</a>
               <div class="res-desc">Model Registry, Support Docs, and Workshop Material</div>
             </li>
@@ -1561,7 +1564,7 @@ pi.cmd      # Windows</span></div></div>
             </li>
             <li>
               <a href="https://github.com/CUNY-AI-Lab/pi-workshop" target="_blank" rel="noopener">github.com/CUNY-AI-Lab/pi-workshop</a>
-              <div class="res-desc">CUNY AI Lab × Pi — setup instructions, troubleshooting, and uninstall</div>
+              <div class="res-desc">CUNY AI Lab × Pi — setup, <code>--doctor</code> health check, troubleshooting, and uninstall</div>
             </li>
             <li>
               <a href="https://docs.github.com" target="_blank" rel="noopener">docs.github.com</a>

@@ -1,15 +1,17 @@
-# TODO — gen-dev-foundations
+# TODO — fall-2026-vibe-coding-i
 
 ## In Progress
 
-- [ ] Slide 6 — What is a Large Language Model (LLM)? _(content pending)_
-- [ ] Slide 7 — How Do LLMs Generate Code? _(content pending)_
+- [ ] Slide 20 — CUNY AI Lab gateway / API key / quota section (Steve; currently a placeholder)
 
 ## Backlog
 
+- [ ] Test the full Pi setup flow (`npx.cmd @cuny-ai-lab/pi-workshop`) on a clean Windows laptop
+
 ## Done
 
-- [ ] Slide reorder: git commands before gh CLI login (slides 14–16)
-- [ ] Rename git commands slide → "Initializing a Git Repo"
-- [ ] Command Line Basics — rearrange progression: mkdir → cd → cd .. → touch → mv → cd → ls
-- [ ] Agenda href anchors — update slide numbers to match current order
+- [x] Fall 2026 dates, Vibe Coding series titles, registration link
+- [x] Removed Git Basics setup/sync and staging/committing/pushing slides
+- [x] Replaced Gemini CLI with Pi + CUNY AI Lab setup
+- [x] Replaced VS Code with native apps (Finder/TextEdit, File Explorer/Notepad) and an IDE outlook slide
+- [x] Upcoming Workshops slide: Vibe Coding II & III, co-working sessions, quota reminder

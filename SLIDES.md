@@ -21,21 +21,26 @@ Companion to `index.html`. Keep this file in sync whenever slide titles or text 
 
 **Stage (agenda table):**
 
-Part 1 — Coding & Development Basics:
-- Icebreaker (10m)
-- What is a Large Language Model?
+Part 1 — Concepts & Context (30m):
+- Icebreaker
+- Vibe Coding in Action
+- What is a Large Language Model (LLM)?
+- How Do LLMs Generate Code?
 - Strengths & Limitations
+
+Part 2 — Development Environment (25m):
 - Inspecting Your Code
 - Leveling Up: IDEs
 - The Command Line
 - What is Git / GitHub?
+- Getting Started with GitHub
 
-Part 2 — Installation & Setup:
-- Your CUNY AI Lab API Key
+Part 3 — Installation & Setup (35m):
+- Your CUNY AI Lab API Key & Quota
 - Installing Pi
-- Login Setup
-- Exit Ticket
-- Next Steps
+- Connect Pi to CUNY AI Lab
+- Upcoming Workshops
+- Links & Resources
 
 ---
 
@@ -238,7 +243,7 @@ Each command is a card with text + CRT screen visualization.
 **Title:** Logging into GitHub
 
 **Stage (step-grid, fragments):**
-1. Install the GitHub CLI: `brew install gh` (macOS) / `winget install GitHub.cli` (Windows)
+1. Install the GitHub CLI — macOS: download and run the installer from cli.github.com · Windows: `winget install GitHub.cli`, then open a new PowerShell window
 2. Start login from your terminal: `gh auth login`
 3. Choose **GitHub.com** → **HTTPS** → **Login with a web browser**
 4. Copy the one-time code, press Enter, and approve in the browser window that opens
@@ -255,16 +260,16 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 20 — Your CUNY AI Lab API Key (PLACEHOLDER)
+## Slide 20 — Your CUNY AI Lab API Key & Quota (PLACEHOLDER)
 
 **Label:** Coming Soon
-**Title:** Your CUNY AI Lab API Key
+**Title:** Your CUNY AI Lab API Key & Quota
 
 **Stage (stageCenter):**
-- **Big:** Placeholder: Steve's introduction to the CUNY AI Lab gateway
-- **Hint:** What the gateway is, how to get your personal API key, and how to keep it safe. You'll paste the key during setup on the next slides.
+- **Big:** Placeholder: Steve's introduction to the CUNY AI Lab gateway, API keys, and quota
+- **Hint:** What the gateway is, how to get your personal API key and keep it safe, and how your quota works so you don't run out before the next workshop. You'll paste the key during setup on the next slides.
 
-> TODO (Steve): replace this placeholder with the gateway / API key section.
+> TODO (Steve): replace this placeholder with the gateway / API key / quota section.
 
 ---
 
@@ -280,10 +285,10 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 22 — API Key & Models
+## Slide 22 — Connect Pi to CUNY AI Lab
 
 **Label:** Setup
-**Title:** API Key & Models
+**Title:** Connect Pi to CUNY AI Lab
 
 **Stage (step-grid, fragments):**
 1. When LazyPi offers to install Pi and its packages, accept the defaults (install all)
@@ -330,6 +335,7 @@ Each command is a card with text + CRT screen visualization.
 
 **Stage (link list):**
 - [ailab.gc.cuny.edu](https://ailab.gc.cuny.edu) — CUNY AI Lab — home page, announcements, and model notes
+- [ailab.gc.cuny.edu/events](https://ailab.gc.cuny.edu/events/) — Upcoming workshops, co-working sessions, and registration
 - [ailab.gc.cuny.edu/resources](https://ailab.gc.cuny.edu/resources) — CAIL Resources — guides, readings, and workshop materials
 - [chat.ailab.gc.cuny.edu](https://chat.ailab.gc.cuny.edu) — CAIL Sandbox (Open WebUI) — GLM 5, Kimi K2.5, and more
 - [tools.ailab.gc.cuny.edu](https://tools.ailab.gc.cuny.edu) — CAIL Tools — additional lab utilities and experiments
@@ -338,9 +344,9 @@ Each command is a card with text + CRT screen visualization.
 - [github.com/cuny-ai-lab](https://github.com/cuny-ai-lab) — CUNY AI Lab on GitHub — open source repos, workshop decks, datasets
 - [cuny-ai-lab.github.io/fall-2026-vibe-coding-ii](https://cuny-ai-lab.github.io/fall-2026-vibe-coding-ii/) — Vibe Coding II: Building a Prototype — companion workshop deck
 - [pi.dev](https://pi.dev) — Pi — open-source AI coding agent that runs in your terminal
-- [github.com/CUNY-AI-Lab/pi-workshop](https://github.com/CUNY-AI-Lab/pi-workshop) — CUNY AI Lab × Pi — setup instructions, troubleshooting, and uninstall
+- [github.com/CUNY-AI-Lab/pi-workshop](https://github.com/CUNY-AI-Lab/pi-workshop) — CUNY AI Lab × Pi — setup, `--doctor` health check, troubleshooting, and uninstall
 - [docs.github.com](https://docs.github.com) — GitHub documentation — repos, Pages, pull requests, Actions
 
 ---
 
-_Last synced: 2026-09-16 (Fall 2026 dates and Vibe Coding series titles; removed Git Basics: Setting Up, Git Basics: Syncing & Inspecting, and Staging/Committing/Pushing slides; Pi setup and API key placeholder slide; deck now 25 slides). Update both this file and `index.html` together._
+_Last synced: 2026-09-16 (Fall 2026 update: Vibe Coding I title and dates; Pi + CUNY AI Lab setup replaces Gemini CLI; native apps replace VS Code; API key & quota placeholder; upcoming workshops, co-working, quota reminder; events link). Deck has 25 slides. Update both this file and `index.html` together._
