@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Is
 
-A single-page HTML slide deck for **CAIL Spotlight Workshop #1: Foundations — Coding with Generative AI**, hosted via GitHub Pages at `cuny-ai-lab.github.io/gen-dev-foundations`. The upstream source is `milwrite/quimbot/docs/cail-workshop-1/`.
+A single-page HTML slide deck for **CAIL Spotlight Workshop #1: Foundations — Coding with Generative AI**, hosted via GitHub Pages at `cuny-ai-lab.github.io/fall-2026-vibe-coding-i`. The upstream source is `milwrite/quimbot/docs/cail-workshop-1/`.
 
 ## Repository Layout
 
