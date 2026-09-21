@@ -24,9 +24,10 @@ Companion to `index.html`. Keep this file in sync whenever slide titles or text 
 Part 1 — Concepts & Context (30m):
 - Icebreaker
 - Vibe Coding in Action
-- What is a Large Language Model (LLM)?
-- How Do LLMs Generate Code?
-- Strengths & Limitations
+- What Is Vibe Coding?
+- Language Models
+- Coding Agents
+- Context
 
 Part 2 — Development Environment (25m):
 - Inspecting Your Code
@@ -47,7 +48,8 @@ Part 3 — Installation & Setup (35m):
 ## Slide 3 — Section Break: Part 1
 
 **Tag:** Part 1
-**Title:** Coding & Development Basics
+**Title:** Concepts & Context
+**Subtitle:** Vibe coding, language models, agents, and context
 
 ---
 
@@ -74,63 +76,59 @@ Part 3 — Installation & Setup (35m):
 
 ---
 
-## Slide 6 — What is a Large Language Model?
+## Slide 6 — Vibe Coding
 
 **Label:** Concept
-**Title:** What is a Large Language Model (LLM)?
-
-**Stage (stageCenter + spectrumBar):**
-- **Big:** A probabilistic pattern engine for text.
-- It learns statistical relationships between tokens (not "facts")
-- It predicts the most likely next token, step by step
-- It generates output by repeating that prediction process
-- **Pipeline bar:** Tokens → Vectors → Attention → Probabilities → Output
-
----
-
-## Slide 7 — How Does an LLM Actually Produce an Answer?
-
-**Label:** Concept
-**Title:** How Does an LLM Actually Produce an Answer?
-
-**Stage (step-grid, fragments):**
-1. **Tokenize** — break your prompt into tokens
-2. **Embed** — turn tokens into vectors
-3. **Transform** — attention mixes information across tokens
-4. **Predict + decode** — choose the next token; repeat
-- **Insight:** Your prompt shapes the probability space. The response is a probabilistic approximation of what you like to see. Wording changes can dramatically shift output.
-
----
-
-## Slide 8 — How Do LLMs Generate Code?
-
-**Label:** Concept
-**Title:** How Do LLMs Generate Code?
+**Title:** What Is Vibe Coding?
 
 **Stage (stageCenter):**
-- **Big:** Code is just another language pattern.
-- The model was trained on large amounts of code + documentation
-- It learned patterns in syntax, structure, and common problem solutions
-- When you ask for code, it predicts the most likely next tokens in a programming language
-- It does not run or test the code unless connected to tools
+- **Big:** A way of making software by describing what you want in natural language and iterating on what the system produces.
+- The human expresses an intention rather than writing every instruction as code.
+- The system responds by generating or modifying software.
+- The process is conversational and iterative.
+- Vibe coding describes a practice used across many models and applications.
 
 ---
 
-## Slide 9 — What's Good / What's Bad
+## Slide 7 — Language Models
 
 **Label:** Concept
-**Title:** What's Good / What's Bad
+**Title:** How Does a Language Model Generate Code?
 
-**Stage (stageCompare):**
-- **✓ What Works:**
-  - They autocomplete entire functions, not just words
-  - They infer intent from partial instructions
-  - They generalize from patterns they have seen before
-- **✗ Where Things Go Wrong:**
-  - Silent logical errors
-  - Hallucinated functions or libraries
-  - Outdated APIs
-  - Confident but wrong assumptions
+**Stage (stageCenter + spectrumBar):**
+- **Big:** A language model generates code in the same basic way it generates prose: one token at a time, using patterns from training and the current context.
+- **Pipeline bar:** Prompt and context → Tokens → Representations and attention → Next-token probabilities → Generated code
+- **Closing:** Generating code and executing it are separate. A language model by itself cannot open files, run commands, or test what it writes.
+
+---
+
+## Slide 8 — Coding Agents
+
+**Label:** Concept
+**Title:** What Makes It a Coding Agent?
+**Subtitle:** A coding agent combines a language model with context, tools, and a feedback loop.
+
+**Stage (agent loop, fragments):**
+1. **Human goal:** States the desired result
+2. **Model:** Uses the available context to choose an action
+3. **Tools:** Read or edit files and run commands
+4. **Environment:** Returns output or an error
+- The agent is the whole system: model, context, tools, and loop.
+
+---
+
+## Slide 9 — Context
+
+**Label:** Concept
+**Title:** What Is Context?
+**Subtitle:** Context is the information available to the model when it makes its next prediction or decision.
+
+**Stage (context list, fragments):**
+- **Your request:** The goal, constraints, and examples you provide
+- **Conversation:** What has already been said
+- **Project:** Files and instructions the agent has read
+- **Tool results:** Command output, errors, tests, and other observations
+- Context is finite and constructed. The agent does not automatically know everything in the project or on the computer.
 
 ---
 
@@ -349,4 +347,4 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-_Last synced: 2026-09-16 (Fall 2026 update: Vibe Coding I title and dates; Pi + CUNY AI Lab setup replaces Gemini CLI; native apps replace VS Code; API key & quota placeholder; upcoming workshops, co-working, quota reminder; events link). Deck has 25 slides. Update both this file and `index.html` together._
+_Last synced: 2026-09-21 (Part 1 concepts reframed around vibe coding, language models, coding agents, and context). Deck has 25 slides. Update both this file and `index.html` together._
