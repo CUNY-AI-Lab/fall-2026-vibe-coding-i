@@ -316,16 +316,20 @@
     .spectrumBar {
       display: flex; align-items: center; justify-content: center;
       gap: clamp(4px,0.8vw,10px); width: 100%;
+      padding: clamp(12px,1.5vw,20px) clamp(16px,2vw,28px);
+      border-top: 1px solid rgba(255,255,255,0.08);
     }
     .spectrumNode {
-      min-width: 0; padding: clamp(8px,1.2vw,14px) clamp(2px,0.4vw,6px);
-      text-align: center;
+      min-width: 0; flex: 1 1 0;
+      display: flex; align-items: center; justify-content: center;
+      padding: clamp(8px,1.2vw,14px) clamp(2px,0.4vw,6px); text-align: center;
     }
     .spectrumNode .sn-label {
       font-size: clamp(11px,1.35vw,16px); font-weight: 700;
-      color: rgba(255,255,255,0.9); margin-bottom: 6px;
+      color: rgba(255,255,255,0.9); line-height: 1.25;
     }
     .spectrumArrow {
+      display: flex; align-items: center;
       font-size: clamp(10px,1.2vw,14px); color: rgba(255,255,255,0.5); flex-shrink: 0;
       transform: translateY(-2px);
     }
@@ -713,6 +717,20 @@
     .slide-break .content .break-sub { font-size: clamp(13px,1.5vw,18px); color: var(--muted); margin-top: 14px; }
     .slide-break::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--part); }
 
+    /* Keep the language-model flow readable on narrow screens. */
+    @media (max-width: 719px) {
+      [data-slide="llm"] .spectrumBar {
+        flex-direction: column; gap: 0;
+        padding: 14px 20px 16px;
+      }
+      [data-slide="llm"] .spectrumNode { width: 100%; padding: 3px 4px; }
+      [data-slide="llm"] .spectrumNode .sn-label { font-size: clamp(13px,3.6vw,15px); }
+      [data-slide="llm"] .spectrumArrow {
+        height: 10px; font-size: 13px; line-height: 10px;
+        color: rgba(121,192,255,0.72); rotate: 90deg;
+      }
+    }
+
     /* ── MEDIUM TABLET ── */
     @media (min-width: 640px) {
       [data-slide="title"] .stage {
@@ -755,8 +773,14 @@
       [data-slide="vibe-coding"] .stageBig { font-size: clamp(22px,2.35vw,30px); }
       [data-slide="vibe-coding"] .stageList { font-size: clamp(16px,1.55vw,20px); line-height: 1.45; }
       [data-slide="vibe-coding"] .stageList li { margin: 7px 0; }
-      [data-slide="llm"] .stageCenter { bottom: clamp(78px,8vw,108px); }
-      [data-slide="llm"] .spectrumBar { position: absolute; left: 0; right: 0; bottom: 0; }
+      [data-slide="llm"] .stageCenter { bottom: clamp(170px,20vw,220px); }
+      [data-slide="llm"] .spectrumBar {
+        position: absolute; left: 0; right: 0; bottom: 0;
+        min-height: clamp(170px,20vw,220px); gap: clamp(8px,1vw,14px);
+        padding: clamp(24px,3vw,36px) clamp(14px,2vw,24px);
+      }
+      [data-slide="llm"] .spectrumNode .sn-label { font-size: clamp(15px,1.55vw,20px); }
+      [data-slide="llm"] .spectrumArrow { font-size: clamp(18px,1.7vw,24px); color: rgba(121,192,255,0.72); }
     }
     /* ── LARGE DESKTOP ── */
     @media (min-width: 1024px) {
@@ -1041,7 +1065,7 @@
           <div class="stageHint">Generating code and executing it are separate. A language model by itself cannot open files, run commands, or test what it writes.</div>
         </div>
       </div>
-      <div class="spectrumBar frag" style="flex-shrink:0; padding:clamp(12px,1.5vw,20px) clamp(16px,2vw,28px); border-top:1px solid rgba(255,255,255,0.08);">
+      <div class="spectrumBar frag" style="flex-shrink:0;">
         <div class="spectrumNode"><div class="sn-label">Prompt + context</div></div>
         <div class="spectrumArrow">&rarr;</div>
         <div class="spectrumNode"><div class="sn-label">Tokens</div></div>
