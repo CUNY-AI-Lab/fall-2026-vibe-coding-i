@@ -251,6 +251,7 @@ Each command is a card with text + CRT screen visualization.
 **Title:** Your CUNY AI Lab API Key & Quota
 
 **Stage (key guide):**
+- **Gateway:** The CUNY AI Lab Gateway connects Pi to the models available through the Lab. Your personal key identifies your account and applies your quota.
 - Compact screenshot of the CUNY AI Lab Dashboard's key-creation form
 - **Lead:** Create a personal key in your CUNY AI Lab Dashboard. Copy it when it appears. You cannot reveal the complete key again.
 - **Keep it private:** Paste the key only into Pi's hidden prompt. Never put it in chat, GitHub, screenshots, or email.
