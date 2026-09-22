@@ -97,7 +97,7 @@ Part 3 — Installation & Setup (35m):
 
 **Stage (stageCenter + spectrumBar):**
 - **Big:** A language model generates code in the same basic way it generates prose: one token at a time, using patterns from training and the current context.
-- **Pipeline bar:** Prompt and context → Tokens → Representations and attention → Next-token probabilities → Generated code
+- **Pipeline bar:** Prompt and context → Tokens → Next-token probabilities → Generated code
 - **Closing:** Generating code and executing it are separate. A language model by itself cannot open files, run commands, or test what it writes.
 
 ---
@@ -336,4 +336,4 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-_Last synced: 2026-09-21 (installer renamed to `@cuny-ai-lab/cail-pi`; credits trimmed; `ls` folded into the navigating slide and the Working with Files slide removed). Deck has 24 slides. Update both this file and `index.html` together._
+_Last synced: 2026-09-22 (installer renamed to `@cuny-ai-lab/cail-pi`; credits trimmed; `ls` folded into the navigating slide and the Working with Files slide removed; gateway / API key slide added by Steve; representations + attention dropped from the slide 7 pipeline). Deck has 24 slides. Update both this file and `index.html` together._
