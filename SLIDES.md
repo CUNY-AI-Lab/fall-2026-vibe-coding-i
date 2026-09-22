@@ -280,8 +280,9 @@ Each command is a card with text + CRT screen visualization.
 **Stage (step-grid, fragments):**
 1. When LazyPi asks, choose **Install everything**. It takes a few minutes; warnings, a skipped package, and a note about `/login` are normal: ignore them and wait for the key prompt
 2. At `CUNY AI Lab API key:` paste your key — your typing stays hidden, and the key is saved securely in Pi
-3. Start Pi: `pi` (macOS) / `pi.cmd` (Windows)
-4. Type `/model` and choose a CUNY AI Lab model
+3. Make sure you're in your projects folder, then make one for today: `pwd`, `mkdir workshop-demo`, `cd workshop-demo`
+4. Start Pi: `pi` (macOS) / `pi.cmd` (Windows)
+5. Type `/model` and choose a CUNY AI Lab model
 - **?** Something off? Run the health check (`npx @cuny-ai-lab/cail-pi --doctor` on macOS, `npx.cmd @cuny-ai-lab/cail-pi --doctor` on Windows), or just ask!
 
 ---
