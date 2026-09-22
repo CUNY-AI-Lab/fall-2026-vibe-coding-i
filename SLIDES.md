@@ -245,16 +245,17 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 19 — Your CUNY AI Lab API Key & Quota (PLACEHOLDER)
+## Slide 19 — Your CUNY AI Lab API Key & Quota
 
-**Label:** Coming Soon
+**Label:** Setup
 **Title:** Your CUNY AI Lab API Key & Quota
 
-**Stage (stageCenter):**
-- **Big:** Placeholder: Steve's introduction to the CUNY AI Lab gateway, API keys, and quota
-- **Hint:** What the gateway is, how to get your personal API key and keep it safe, and how your quota works so you don't run out before the next workshop. You'll paste the key during setup on the next slides.
-
-> TODO (Steve): replace this placeholder with the gateway / API key / quota section.
+**Stage (key guide):**
+- Compact screenshot of the CUNY AI Lab Dashboard's key-creation form
+- **Lead:** Create a personal key in your CUNY AI Lab Dashboard. Copy it when it appears. You cannot reveal the complete key again.
+- **Keep it private:** Paste the key only into Pi's hidden prompt. Never put it in chat, GitHub, screenshots, or email.
+- **Your quota:** All your personal keys share one allowance. Creating another key does not add capacity. Check your current usage in the Dashboard.
+- **Guide:** https://ailab.gc.cuny.edu/docs/api-keys/
 
 ---
 
