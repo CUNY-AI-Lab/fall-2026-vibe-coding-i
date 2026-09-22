@@ -6,7 +6,7 @@
 
 ## Backlog
 
-- [ ] Test the full Pi setup flow (`npx.cmd @cuny-ai-lab/pi-workshop`) on a clean Windows laptop
+- [ ] Test the full Pi setup flow (`npx.cmd @cuny-ai-lab/cail-pi`) on a clean Windows laptop
 
 ## Done
 

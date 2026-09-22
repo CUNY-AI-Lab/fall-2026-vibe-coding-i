@@ -204,27 +204,14 @@ Part 3 — Installation & Setup (35m):
 **Stage (cmd-cards, fragments):**
 Each command is a card with text + CRT screen visualization.
 - `pwd` — Print your current location · *screen: path breadcrumb with blinking cursor*
+- `ls` — List what's in the folder · *screen: three items appear with stagger*
 - `mkdir my-project` — Make a new folder · *screen: folder icon pops in*
 - `cd my-project` — Move into a folder · *screen: arrow enters folder*
 - `cd ..` — Go up one level · *screen: arrow exits folder*
 
 ---
 
-## Slide 16 — Command Line Basics: Working with Files
-
-**Label:** Tool
-**Title:** Command Line Basics
-**Subtitle:** Working with Files
-
-**Stage (cmd-cards, fragments):**
-Each command is a card with text + CRT screen visualization.
-- `ls` — List what's in the folder · *screen: three items appear with stagger*
-- `touch index.html` — Create a new file · *screen: file icon pops in*
-- `mv index.html my-project` — Move a file into a folder · *screen: file slides toward folder*
-
----
-
-## Slide 17 — What is Git? What is GitHub?
+## Slide 16 — What is Git? What is GitHub?
 
 **Label:** Concept
 **Title:** What is Git? What is GitHub?
@@ -235,7 +222,7 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 18 — Logging into GitHub
+## Slide 17 — Logging into GitHub
 
 **Label:** Setup
 **Title:** Logging into GitHub
@@ -249,7 +236,7 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 19 — Section Break: Part 3
+## Slide 18 — Section Break: Part 3
 
 **Tag:** Part 2
 **Title:** Installation & Setup
@@ -258,7 +245,7 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 20 — Your CUNY AI Lab API Key & Quota (PLACEHOLDER)
+## Slide 19 — Your CUNY AI Lab API Key & Quota (PLACEHOLDER)
 
 **Label:** Coming Soon
 **Title:** Your CUNY AI Lab API Key & Quota
@@ -271,19 +258,19 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 21 — Installing Pi
+## Slide 20 — Installing Pi
 
 **Label:** Setup
 **Title:** Installing Pi
 **Subtitle:** Our AI coding agent, connected to CUNY AI Lab models
 
 **Stage (two-column compare):**
-- **Windows — PowerShell:** 1. `winget install OpenJS.NodeJS.LTS` (Node.js 22.19 or newer) and `winget install Git.Git` → 2. Close PowerShell and open a new window → 3. Check with `node --version` and `git --version` → 4. `npx.cmd @cuny-ai-lab/pi-workshop`
-- **macOS — Terminal:** 1. Install Node.js (22.19 or newer) from nodejs.org → 2. Open a new Terminal window → 3. Check with `node --version` and `git --version` (if macOS offers to install developer tools for Git, click Install) → 4. `npx @cuny-ai-lab/pi-workshop`
+- **Windows — PowerShell:** 1. `winget install OpenJS.NodeJS.LTS` (Node.js 22.19 or newer) and `winget install Git.Git` → 2. Close PowerShell and open a new window → 3. Check with `node --version` and `git --version` → 4. `npx.cmd @cuny-ai-lab/cail-pi`
+- **macOS — Terminal:** 1. Install Node.js (22.19 or newer) from nodejs.org → 2. Open a new Terminal window → 3. Check with `node --version` and `git --version` (if macOS offers to install developer tools for Git, click Install) → 4. `npx @cuny-ai-lab/cail-pi`
 
 ---
 
-## Slide 22 — Connect Pi to CUNY AI Lab
+## Slide 21 — Connect Pi to CUNY AI Lab
 
 **Label:** Setup
 **Title:** Connect Pi to CUNY AI Lab
@@ -293,11 +280,11 @@ Each command is a card with text + CRT screen visualization.
 2. At `CUNY AI Lab API key:` paste your key — your typing stays hidden, and the key is saved securely in Pi
 3. Start Pi: `pi` (macOS) / `pi.cmd` (Windows)
 4. Type `/model` and choose a CUNY AI Lab model
-- **?** Something off? Run the health check (`npx @cuny-ai-lab/pi-workshop --doctor`), or just ask!
+- **?** Something off? Run the health check (`npx @cuny-ai-lab/cail-pi --doctor` on macOS, `npx.cmd @cuny-ai-lab/cail-pi --doctor` on Windows), or just ask!
 
 ---
 
-## Slide 23 — Troubleshooting
+## Slide 22 — Troubleshooting
 
 **Label:** Check-in
 **Title:** Troubleshooting
@@ -311,7 +298,7 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 24 — Upcoming Workshops
+## Slide 23 — Upcoming Workshops
 
 **Label:** What's Next
 **Title:** Upcoming Workshops
@@ -326,7 +313,7 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 25 — Resources
+## Slide 24 — Resources
 
 **Label:** Resources
 **Title:** Links & References
@@ -342,9 +329,9 @@ Each command is a card with text + CRT screen visualization.
 - [github.com/cuny-ai-lab](https://github.com/cuny-ai-lab) — CUNY AI Lab on GitHub — open source repos, workshop decks, datasets
 - [cuny-ai-lab.github.io/fall-2026-vibe-coding-ii](https://cuny-ai-lab.github.io/fall-2026-vibe-coding-ii/) — Vibe Coding II: Building a Prototype — companion workshop deck
 - [pi.dev](https://pi.dev) — Pi — open-source AI coding agent that runs in your terminal
-- [github.com/CUNY-AI-Lab/pi-workshop](https://github.com/CUNY-AI-Lab/pi-workshop) — CUNY AI Lab × Pi — setup, `--doctor` health check, troubleshooting, and uninstall
+- [github.com/CUNY-AI-Lab/cail-pi](https://github.com/CUNY-AI-Lab/cail-pi) — CUNY AI Lab × Pi — setup, `--doctor` health check, troubleshooting, and uninstall
 - [docs.github.com](https://docs.github.com) — GitHub documentation — repos, Pages, pull requests, Actions
 
 ---
 
-_Last synced: 2026-09-21 (Part 1 concepts reframed around vibe coding, language models, coding agents, and context). Deck has 25 slides. Update both this file and `index.html` together._
+_Last synced: 2026-09-21 (installer renamed to `@cuny-ai-lab/cail-pi`; credits trimmed; `ls` folded into the navigating slide and the Working with Files slide removed). Deck has 24 slides. Update both this file and `index.html` together._
