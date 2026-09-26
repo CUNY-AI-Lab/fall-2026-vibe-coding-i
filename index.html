@@ -1015,8 +1015,8 @@
           <a class="agenda-item" href="#11"><span class="agenda-item-label">Inspecting Your Code</span></a>
           <a class="agenda-item" href="#12"><span class="agenda-item-label">Leveling Up: IDEs</span></a>
           <a class="agenda-item" href="#13"><span class="agenda-item-label">The Command Line</span></a>
-          <a class="agenda-item" href="#17"><span class="agenda-item-label">What is Git / GitHub?</span></a>
-          <a class="agenda-item" href="#18"><span class="agenda-item-label">Getting Started with GitHub</span></a>
+          <a class="agenda-item" href="#16"><span class="agenda-item-label">What is Git / GitHub?</span></a>
+          <a class="agenda-item" href="#17"><span class="agenda-item-label">Getting Started with GitHub</span></a>
         </div>
 
         <div class="agenda-section">
@@ -1092,10 +1092,10 @@
         <div class="stageInner">
           <div class="stageBig">A way of making software by describing what you want in natural language and iterating on what the system produces.</div>
           <ul class="stageList" style="margin-top:clamp(18px,2.5vw,28px);">
-            <li class="frag">The human expresses an intention rather than writing every instruction as code.</li>
-            <li class="frag">The system responds by generating or modifying software.</li>
-            <li class="frag">The process is conversational and iterative.</li>
-            <li class="frag">Vibe coding describes a practice used across many models and applications.</li>
+            <li>The human expresses an intention rather than writing every instruction as code.</li>
+            <li>The system responds by generating or modifying software.</li>
+            <li>The process is conversational and iterative.</li>
+            <li>Vibe coding describes a practice used across many models and applications.</li>
           </ul>
         </div>
       </div>
@@ -1166,23 +1166,23 @@
     </div>
     <div class="stage">
       <div class="context-list">
-        <div class="context-row frag">
+        <div class="context-row">
           <p class="context-term">YOUR REQUEST</p>
           <p class="context-copy">The goal, constraints, and examples you provide</p>
         </div>
-        <div class="context-row frag">
+        <div class="context-row">
           <p class="context-term">CONVERSATION</p>
           <p class="context-copy">What has already been said</p>
         </div>
-        <div class="context-row frag">
+        <div class="context-row">
           <p class="context-term">PROJECT</p>
           <p class="context-copy">Files and instructions the agent has read</p>
         </div>
-        <div class="context-row frag">
+        <div class="context-row">
           <p class="context-term">TOOL RESULTS</p>
           <p class="context-copy">Command output, errors, tests, and other observations</p>
         </div>
-        <p class="context-caption frag">Context is finite and constructed. The agent does not automatically know everything in the project or on the computer.</p>
+        <p class="context-caption">Context is finite and constructed. The agent does not automatically know everything in the project or on the computer.</p>
       </div>
     </div>
   </section>
@@ -1306,7 +1306,7 @@
     </div>
     <div class="stage">
       <div class="cmd-cards">
-        <div class="cmd-card frag">
+        <div class="cmd-card">
           <div class="cmd-info">
             <code><span class="hl">pwd</span></code>
             <span class="cmd-desc">Print your current location</span>
@@ -1317,7 +1317,7 @@
             </div>
           </div>
         </div>
-        <div class="cmd-card frag">
+        <div class="cmd-card">
           <div class="cmd-info">
             <code><span class="hl">ls</span></code>
             <span class="cmd-desc">List what's in the folder</span>
@@ -1339,7 +1339,7 @@
             </div>
           </div>
         </div>
-        <div class="cmd-card frag">
+        <div class="cmd-card">
           <div class="cmd-info">
             <code><span class="hl">mkdir</span> my-project</code>
             <span class="cmd-desc">Make a new folder</span>
@@ -1353,7 +1353,7 @@
             </div>
           </div>
         </div>
-        <div class="cmd-card frag">
+        <div class="cmd-card">
           <div class="cmd-info">
             <code><span class="hl">cd</span> my-project</code>
             <span class="cmd-desc">Move into a folder</span>
@@ -1366,7 +1366,7 @@
             </div>
           </div>
         </div>
-        <div class="cmd-card frag">
+        <div class="cmd-card">
           <div class="cmd-info">
             <code><span class="hl">cd</span> ..</code>
             <span class="cmd-desc">Go up one level</span>
@@ -1405,7 +1405,23 @@
     </div>
   </section>
 
-  <!-- 17 · LOGGING INTO GITHUB -->
+  <!-- 17 · INSTALLING THE GITHUB CLI -->
+  <section class="slide" role="group" aria-roledescription="slide" data-slide="gh-install" aria-label="Installing the GitHub CLI">
+    <div class="content">
+      <div class="label">Setup</div>
+      <h2>Installing the GitHub CLI</h2>
+    </div>
+    <div class="stage">
+      <div class="step-grid">
+        <div class="step-row frag"><div class="step-num">1</div><div class="step-text"><strong>macOS:</strong> install <a href="https://brew.sh" target="_blank" rel="noopener">Homebrew</a>, then run the &ldquo;Next steps&rdquo; commands it prints<span class="code-block">/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;</span></div></div>
+        <div class="step-row frag"><div class="step-num">2</div><div class="step-text"><strong>macOS:</strong> install the GitHub CLI<span class="code-block">brew install gh</span></div></div>
+        <div class="step-row frag"><div class="step-num">3</div><div class="step-text"><strong>Windows:</strong> install it, then open a new PowerShell window<span class="code-block">winget install GitHub.cli</span></div></div>
+        <div class="step-row frag"><div class="step-num">4</div><div class="step-text">Check that it worked:<span class="code-block">gh --version</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 18 · LOGGING INTO GITHUB -->
   <section class="slide" role="group" aria-roledescription="slide" data-slide="gh-login" aria-label="Logging into GitHub from the command line">
     <div class="content">
       <div class="label">Setup</div>
@@ -1413,16 +1429,15 @@
     </div>
     <div class="stage">
       <div class="step-grid">
-        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">Install the GitHub CLI:<br><strong>macOS:</strong> install <a href="https://brew.sh" target="_blank" rel="noopener">Homebrew</a> first, run the &ldquo;Next steps&rdquo; commands it prints, then:<span class="code-block">brew install gh</span><strong>Windows:</strong> run the command below, then open a new PowerShell window<span class="code-block">winget install GitHub.cli</span></div></div>
-        <div class="step-row frag"><div class="step-num">2</div><div class="step-text">Start login from your terminal:<span class="code-block">gh auth login</span></div></div>
-        <div class="step-row frag"><div class="step-num">3</div><div class="step-text">Choose <strong>GitHub.com</strong> → <strong>HTTPS</strong> → <strong>Login with a web browser</strong></div></div>
-        <div class="step-row frag"><div class="step-num">4</div><div class="step-text">Copy the one-time code, press Enter, and approve in the browser window that opens</div></div>
-        <div class="step-row frag"><div class="step-num">5</div><div class="step-text">Back in your terminal you'll see: <strong>✓ Logged in as your-username</strong></div></div>
+        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">Start login from your terminal:<span class="code-block">gh auth login</span></div></div>
+        <div class="step-row frag"><div class="step-num">2</div><div class="step-text">Choose <strong>GitHub.com</strong> → <strong>HTTPS</strong> → <strong>Login with a web browser</strong></div></div>
+        <div class="step-row frag"><div class="step-num">3</div><div class="step-text">Copy the one-time code, press Enter, and approve in the browser window that opens</div></div>
+        <div class="step-row frag"><div class="step-num">4</div><div class="step-text">Back in your terminal you'll see: <strong>✓ Logged in as your-username</strong></div></div>
       </div>
     </div>
   </section>
 
-  <!-- 18 · SECTION BREAK: PART 3 -->
+  <!-- 19 · SECTION BREAK: PART 3 -->
   <section class="slide slide-break" role="group" aria-roledescription="slide" data-slide="part3" style="--part:#2ea043;" aria-label="Part 3 section break">
     <div class="content">
       <div class="break-tag">Part 3</div>
@@ -1431,7 +1446,7 @@
     </div>
   </section>
 
-  <!-- 19 · CUNY AI LAB API KEY & QUOTA -->
+  <!-- 20 · CUNY AI LAB API KEY & QUOTA -->
   <section class="slide" role="group" aria-roledescription="slide" data-slide="api-key" aria-label="Your CUNY AI Lab API Key and Quota">
     <div class="content">
       <div class="label">Setup</div>
@@ -1457,7 +1472,7 @@
     </div>
   </section>
 
-  <!-- 20 · INSTALLING PI -->
+  <!-- 21 · INSTALLING PI -->
   <section class="slide" role="group" aria-roledescription="slide" data-slide="install" aria-label="Installing Pi">
     <div class="content">
       <div class="label">Setup</div>
@@ -1495,7 +1510,7 @@ winget install Git.Git</span>
     </div>
   </section>
 
-  <!-- 21 · CONNECT PI TO CUNY AI LAB -->
+  <!-- 22 · CONNECT PI TO CUNY AI LAB -->
   <section class="slide" role="group" aria-roledescription="slide" data-slide="login" aria-label="Connect Pi to CUNY AI Lab">
     <div class="content">
       <div class="label">Setup</div>
@@ -1517,7 +1532,7 @@ npx.cmd @cuny-ai-lab/cail-pi --doctor  # Windows</span></div></div>
     </div>
   </section>
 
-  <!-- 22 · TROUBLESHOOTING -->
+  <!-- 23 · TROUBLESHOOTING -->
   <section class="slide" role="group" aria-roledescription="slide" data-slide="troubleshoot" aria-label="Troubleshooting">
     <div class="content">
       <div class="label">Check-in</div>
@@ -1539,7 +1554,7 @@ npx.cmd @cuny-ai-lab/cail-pi --doctor  # Windows</span></div></div>
   </section>
 
 
-  <!-- 23 · UPCOMING WORKSHOPS -->
+  <!-- 24 · UPCOMING WORKSHOPS -->
   <section class="slide" role="group" aria-roledescription="slide" data-slide="nextsteps" aria-label="Upcoming Workshops">
     <div class="content">
       <div class="label">What's Next</div>
@@ -1548,23 +1563,23 @@ npx.cmd @cuny-ai-lab/cail-pi --doctor  # Windows</span></div></div>
     </div>
     <div class="stage">
       <div class="step-grid">
-        <div class="step-row frag">
+        <div class="step-row">
           <div class="step-num">1</div>
           <div class="step-text"><strong>Vibe Coding II: Building a Prototype</strong> &middot; Tuesday, September 29 &middot; 2:30&ndash;4:00 pm<br><span style="opacity:0.7;">Build a small prototype with Pi. Prerequisite: this workshop, or familiarity with the command line and Git/GitHub</span></div>
         </div>
-        <div class="step-row frag">
+        <div class="step-row">
           <div class="step-num">2</div>
           <div class="step-text"><strong>Vibe Coding III: Bring Your Own Project Clinic</strong> &middot; Tuesday, October 13 &middot; 2:30&ndash;4:00 pm<br><span style="opacity:0.7;">Prerequisite: Vibe Coding I &amp; II, or comparable experience</span></div>
         </div>
-        <div class="step-row frag">
+        <div class="step-row">
           <div class="step-num">3</div>
           <div class="step-text"><strong>Co-Working Sessions</strong> &middot; 2:00&ndash;4:00 pm<br><span style="opacity:0.7;">Thursday, October 29 &middot; Tuesday, November 17 &middot; Thursday, December 3</span></div>
         </div>
-        <div class="step-row frag">
+        <div class="step-row">
           <div class="step-num">4</div>
           <div class="step-text"><a href="https://cail-workshop-registration.ailab-452.workers.dev/" target="_blank" rel="noopener">Register for upcoming workshops</a><br><span style="opacity:0.7;"><strong>In the meantime:</strong> experiment with Pi on your own!</span></div>
         </div>
-        <div class="step-row frag">
+        <div class="step-row">
           <div class="step-num" style="background:var(--accent);">!</div>
           <div class="step-text"><strong>Mind your quota</strong><br><span style="opacity:0.7;">Your API key comes with a limited quota. Keep an eye on it as you experiment so you don&rsquo;t burn through it before the next workshop.</span></div>
         </div>
@@ -1572,7 +1587,7 @@ npx.cmd @cuny-ai-lab/cail-pi --doctor  # Windows</span></div></div>
     </div>
   </section>
 
-  <!-- 24 · RESOURCES -->
+  <!-- 25 · RESOURCES -->
   <section class="slide" role="group" aria-roledescription="slide" data-slide="resources" aria-label="Resources">
     <div class="content">
       <div class="label">Resources</div>

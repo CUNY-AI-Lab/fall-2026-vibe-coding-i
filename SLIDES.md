@@ -222,21 +222,33 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 17 — Logging into GitHub
+## Slide 17 — Installing the GitHub CLI
+
+**Label:** Setup
+**Title:** Installing the GitHub CLI
+
+**Stage (step-grid, fragments):**
+1. macOS: install Homebrew from brew.sh, then run the "Next steps" commands it prints: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+2. macOS: `brew install gh`
+3. Windows: `winget install GitHub.cli`, then open a new PowerShell window
+4. Check that it worked: `gh --version`
+
+---
+
+## Slide 18 — Logging into GitHub
 
 **Label:** Setup
 **Title:** Logging into GitHub
 
 **Stage (step-grid, fragments):**
-1. Install the GitHub CLI — macOS: install Homebrew first (`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`), run the "Next steps" commands it prints, then `brew install gh` · Windows: `winget install GitHub.cli`, then open a new PowerShell window
-2. Start login from your terminal: `gh auth login`
-3. Choose **GitHub.com** → **HTTPS** → **Login with a web browser**
-4. Copy the one-time code, press Enter, and approve in the browser window that opens
-5. Back in your terminal you'll see: **✓ Logged in as your-username**
+1. Start login from your terminal: `gh auth login`
+2. Choose **GitHub.com** → **HTTPS** → **Login with a web browser**
+3. Copy the one-time code, press Enter, and approve in the browser window that opens
+4. Back in your terminal you'll see: **✓ Logged in as your-username**
 
 ---
 
-## Slide 18 — Section Break: Part 3
+## Slide 19 — Section Break: Part 3
 
 **Tag:** Part 2
 **Title:** Installation & Setup
@@ -245,7 +257,7 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 19 — Your CUNY AI Lab API Key & Quota
+## Slide 20 — Your CUNY AI Lab API Key & Quota
 
 **Label:** Setup
 **Title:** Your CUNY AI Lab API Key & Quota
@@ -260,7 +272,7 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 20 — Installing Pi
+## Slide 21 — Installing Pi
 
 **Label:** Setup
 **Title:** Installing Pi
@@ -272,7 +284,7 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 21 — Connect Pi to CUNY AI Lab
+## Slide 22 — Connect Pi to CUNY AI Lab
 
 **Label:** Setup
 **Title:** Connect Pi to CUNY AI Lab
@@ -287,7 +299,7 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 22 — Troubleshooting
+## Slide 23 — Troubleshooting
 
 **Label:** Check-in
 **Title:** Troubleshooting
@@ -301,7 +313,7 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 23 — Upcoming Workshops
+## Slide 24 — Upcoming Workshops
 
 **Label:** What's Next
 **Title:** Upcoming Workshops
@@ -316,7 +328,7 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 24 — Resources
+## Slide 25 — Resources
 
 **Label:** Resources
 **Title:** Links & References
