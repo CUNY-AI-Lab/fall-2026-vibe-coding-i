@@ -280,7 +280,8 @@ Each command is a card with text + CRT screen visualization.
 
 **Stage (two-column compare):**
 - **Windows — PowerShell:** 1. `winget install OpenJS.NodeJS.LTS` (Node.js 22.19 or newer) and `winget install Git.Git` → 2. Close PowerShell and open a new window → 3. Check with `node --version` and `git --version` → 4. `npx.cmd @cuny-ai-lab/cail-pi`
-- **macOS — Terminal:** 1. Install Node.js (22.19 or newer) from nodejs.org → 2. Open a new Terminal window → 3. Check with `node --version` and `git --version` (if macOS offers to install developer tools for Git, click Install) → 4. `npx @cuny-ai-lab/cail-pi`
+- **macOS — Terminal:** 1. Install Node.js with Homebrew: `brew install node` → 2. Open a new Terminal window → 3. Check with `node --version` and `git --version` → 4. `npx @cuny-ai-lab/cail-pi`
+- **macOS note (muted):** Permission error? **Don't use `sudo`**. Raise your hand
 
 ---
 
@@ -310,6 +311,7 @@ Each command is a card with text + CRT screen visualization.
 - Raise your hand — we'll come to you
 - Help a neighbor if you're all set
 - No issue too small to ask about
+- **Hint:** Used `sudo` while installing Pi on a Mac? Fix it with: `sudo chown -R $(whoami) ~/.npm ~/.pi` → `brew install node` → `npm install -g @earendil-works/pi-coding-agent`
 
 ---
 
