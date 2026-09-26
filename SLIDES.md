@@ -228,7 +228,7 @@ Each command is a card with text + CRT screen visualization.
 **Title:** Logging into GitHub
 
 **Stage (step-grid, fragments):**
-1. Install the GitHub CLI — macOS: download and run the installer from cli.github.com · Windows: `winget install GitHub.cli`, then open a new PowerShell window
+1. Install the GitHub CLI — macOS: install Homebrew first (`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`), run the "Next steps" commands it prints, then `brew install gh` · Windows: `winget install GitHub.cli`, then open a new PowerShell window
 2. Start login from your terminal: `gh auth login`
 3. Choose **GitHub.com** → **HTTPS** → **Login with a web browser**
 4. Copy the one-time code, press Enter, and approve in the browser window that opens
