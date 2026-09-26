@@ -963,6 +963,52 @@
     @media (min-width: 720px) {
       body.overview section.slide { flex-direction: column; }
     }
+  
+    /* Fit on short screens (laptops, projectors at 1280x720).
+       Centered panels use auto margins instead of justify-content:center, so
+       when content is taller than the panel it starts at the top and scrolls
+       instead of being cut off above where scrolling can't reach it. */
+    .step-grid, .agenda-table, .key-guide, .stageCompare .col { justify-content: flex-start; }
+    .step-grid > :first-child, .agenda-table > :first-child, .key-guide > :first-child, .stageCompare .col > :first-child { margin-top: auto; }
+    .step-grid > :last-child, .agenda-table > :last-child, .key-guide > :last-child, .stageCompare .col > :last-child { margin-bottom: auto; }
+    .stageCenter { align-items: flex-start; overflow-y: auto; }
+    .stageCenter > .stageInner { margin-top: auto; margin-bottom: auto; }
+    /* Text and spacing also scale with viewport height, not just width */
+    .step-row { padding-top: clamp(5px,1.1vh,10px); padding-bottom: clamp(5px,1.1vh,10px); }
+    .step-text { font-size: clamp(15px, min(1.9vw, 2.5vh), 22px); }
+    .stageCompare .col { padding-top: clamp(16px,3.5vh,44px); padding-bottom: clamp(16px,3.5vh,44px); }
+    .stageCompare .col-sub { font-size: clamp(14px, min(1.8vw, 2.4vh), 21px); line-height: 1.5; }
+    .stage .code-block { margin-top: clamp(4px,0.8vh,8px); margin-bottom: clamp(3px,0.6vh,6px); }
+    @media (min-width: 720px) {
+      .agenda-section { margin-bottom: clamp(6px,2vh,32px); }
+      .agenda-section-head { padding-bottom: clamp(3px,0.8vh,8px); margin-bottom: clamp(3px,0.8vh,8px); }
+      .agenda-item { padding-top: clamp(1px,0.45vh,6px); padding-bottom: clamp(1px,0.45vh,6px); }
+      .agenda-item-label { font-size: clamp(13px, min(1.4vw, 2.2vh), 17px); }
+      .agenda-section-title { font-size: clamp(13px, min(1.6vw, 2.4vh), 18px); }
+      .key-guide { gap: clamp(10px,2vh,24px); padding-top: clamp(14px,3vh,36px); padding-bottom: clamp(14px,3vh,36px); }
+      .key-guide-shot { width: min(100%, 520px, 46vh); }
+      .stageBig { font-size: clamp(22px, min(3vw, 4.6vh), 36px); }
+      .stageHint { margin-top: clamp(10px,2.4vh,22px); }
+      .stageList li { margin: clamp(3px,1vh,10px) 0; }
+      .res-list li { padding-top: clamp(4px,0.9vh,8px); padding-bottom: clamp(4px,0.9vh,8px); }
+      .stage .code-block { font-size: clamp(10px, min(1.1vw, 1.8vh), 13px); }
+      .stageHint { font-size: clamp(14px, min(1.6vw, 2.4vh), 20px); }
+      .stageList { font-size: clamp(15px, min(1.8vw, 2.6vh), 22px); }
+      .step-grid { padding-top: clamp(6px,1.5vh,24px); padding-bottom: clamp(6px,1.5vh,24px); }
+      .agenda-table { padding-top: clamp(10px,2.4vh,28px); padding-bottom: clamp(10px,2.4vh,28px); }
+    }
+    /* 4:3 projectors (1024x768): give the stage a little more of the width */
+    @media (min-width: 871px) and (max-width: 1150px) {
+      body:not(.overview) section.slide:not([data-slide="title"]):not(.slide-break) .content { flex-basis: 38%; }
+      body:not(.overview) section.slide:not([data-slide="title"]):not(.slide-break) .stage { flex-basis: 58%; }
+    }
+    /* Resources: two balanced columns when the stage is wide enough */
+    @media (min-width: 1000px) {
+      .res-wrap { column-count: 2; column-gap: clamp(16px,2vw,28px); }
+      .res-group { break-inside: auto; }
+      .res-group-title { break-after: avoid; }
+      .res-list li { break-inside: avoid; }
+    }
   </style>
 </head>
 <body>
@@ -1535,13 +1581,12 @@ winget install Git.Git</span>
     </div>
     <div class="stage">
       <div class="step-grid">
-        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">When LazyPi asks, choose <strong>Install everything</strong><br><span style="opacity:0.7;">It takes a few minutes. Warnings, a skipped package, and a note about <code>/login</code> are normal: ignore them and wait for the key prompt</span></div></div>
-        <div class="step-row frag"><div class="step-num">2</div><div class="step-text">At <code>CUNY AI Lab API key:</code> paste your key<br><span style="opacity:0.7;">Your typing stays hidden, and the key is saved securely in Pi</span></div></div>
+        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">When LazyPi asks, choose <strong>Install everything</strong><br><span style="opacity:0.7;">Takes a few minutes. Warnings and a note about <code>/login</code> are normal: wait for the key prompt</span></div></div>
+        <div class="step-row frag"><div class="step-num">2</div><div class="step-text">At <code>CUNY AI Lab API key:</code> paste your key <span style="opacity:0.7;">(your typing stays hidden)</span></div></div>
         <div class="step-row frag"><div class="step-num">3</div><div class="step-text">Make sure you&rsquo;re in your projects folder, then make one for today:<span class="code-block">pwd
 mkdir workshop-demo
 cd workshop-demo</span></div></div>
-        <div class="step-row frag"><div class="step-num">4</div><div class="step-text">Start Pi:<span class="code-block">pi          # macOS
-pi.cmd      # Windows</span></div></div>
+        <div class="step-row frag"><div class="step-num">4</div><div class="step-text">Start Pi with <code>pi</code> (<code>pi.cmd</code> on Windows)</div></div>
         <div class="step-row frag"><div class="step-num">5</div><div class="step-text">Type <code>/model</code> and choose a CUNY AI Lab model</div></div>
         <div class="step-row frag"><div class="step-num" style="background:var(--accent);">?</div><div class="step-text">Something off? Run the health check, or just ask!<span class="code-block">npx @cuny-ai-lab/cail-pi --doctor      # macOS
 npx.cmd @cuny-ai-lab/cail-pi --doctor  # Windows</span></div></div>
