@@ -280,7 +280,7 @@ Each command is a card with text + CRT screen visualization.
 
 **Stage (two-column compare):**
 - **Windows — PowerShell:** 1. `winget install OpenJS.NodeJS.LTS` (Node.js 22.19 or newer) and `winget install Git.Git` → 2. Close PowerShell and open a new window → 3. Check with `node --version` and `git --version` → 4. `npx.cmd @cuny-ai-lab/cail-pi`
-- **macOS — Terminal:** 1. Install Node.js with Homebrew: `brew install node` → 2. Open a new Terminal window → 3. Check with `node --version` and `git --version` → 4. `npx @cuny-ai-lab/cail-pi`
+- **macOS — Terminal:** 1. No Homebrew yet? Install it, then run the "Next steps" commands it prints: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` → 2. Install Node.js: `brew install node` → 3. Open a new Terminal window and check `node --version` and `git --version` → 4. `npx @cuny-ai-lab/cail-pi`
 - **macOS note (muted):** Permission error? **Don't use `sudo`**. Raise your hand
 
 ---

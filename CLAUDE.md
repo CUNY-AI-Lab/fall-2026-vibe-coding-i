@@ -17,7 +17,7 @@ A single-page HTML slide deck for **Vibe Coding I: Foundations** (CUNY AI Lab ·
 
 - `index.html` — the slide deck (HTML + CSS inline, JS loaded from `src/slides.js`, no build step)
 - `SLIDES.md` — plain-text companion documenting every slide's label, title, and stage content
-- `src/slides.js` — navigation logic (keyboard, swipe, slider, hash URLs, fragment reveals)
+- `src/slides.js` — navigation logic (keyboard, swipe, slider, hash URLs, fragment reveals), plus a copy button on every line of each `.code-block` (trailing `# macOS`-style notes are shown but not copied), so code blocks must stay plain text, one command per line
 - `src/chainwheel.html` — self-contained canvas animation embedded via iframe on the title slide
 
 ## Sync Rules
