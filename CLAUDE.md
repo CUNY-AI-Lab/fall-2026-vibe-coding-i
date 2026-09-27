@@ -17,6 +17,7 @@ A single-page HTML slide deck for **Vibe Coding I: Foundations** (CUNY AI Lab ·
 
 - `index.html` — the slide deck (HTML + CSS inline, JS loaded from `src/slides.js`, no build step)
 - `SLIDES.md` — plain-text companion documenting every slide's label, title, and stage content
+- `img/qr-code.svg` — QR code (`img/qr-code.svg`, title slide) encodes `https://cuny-ai-lab.github.io/fall-2026-vibe-coding-i/`: plain dark modules on white so any phone camera can read it on a dark projector slide. Regenerate it if the Pages URL changes with Python's `qrcode` package (error correction M, border 3) and check it decodes before committing.
 - `src/slides.js` — navigation logic (keyboard, swipe, slider, hash URLs, fragment reveals), plus a copy button on every line of each `.code-block` (trailing `# macOS`-style notes are shown but not copied), so code blocks must stay plain text, one command per line
 - `src/chainwheel.html` — self-contained canvas animation embedded via iframe on the title slide
 

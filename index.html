@@ -193,6 +193,23 @@
     }
 
     /* title slide credit bar */
+    .title-qr {
+      display: flex; align-items: center; gap: clamp(12px,1.5vw,20px);
+      margin-top: clamp(12px,1.5vw,20px);
+    }
+    .title-qr img {
+      display: block; width: clamp(96px,10vw,150px); height: clamp(96px,10vw,150px);
+      border-radius: 8px; background: #fff;
+      transition: box-shadow 0.25s;
+    }
+    .title-qr a:hover img { box-shadow: 0 0 0 3px rgba(121,192,255,0.35); }
+    .title-qr .qr-caption {
+      font-size: clamp(12px,1.2vw,14px); color: #d4aa70;
+      line-height: 1.5;
+    }
+    .title-qr .qr-caption strong {
+      color: #e0be8a; font-weight: 600; opacity: 1;
+    }
     .title-credit {
       margin-top: auto;
       padding-top: clamp(16px,2vw,24px);
@@ -952,7 +969,8 @@
     body.overview .content .date,
     body.overview .content .authors,
     body.overview .content .orgs,
-    body.overview .title-credit { display: none; }
+    body.overview .title-credit,
+    body.overview .title-qr { display: none; }
     /* hide stage in overview */
     body.overview .stage { display: none; }
     /* section breaks */
@@ -1033,6 +1051,10 @@
         <div class="label">CUNY AI Lab &middot; Vibe Coding Series</div>
         <h2>Vibe Coding I: Foundations</h2>
         <p class="date">Tuesday, September 22, 2026 &middot; 2:30&ndash;4:00 pm</p>
+      </div>
+      <div class="title-qr">
+        <a href="https://cuny-ai-lab.github.io/fall-2026-vibe-coding-i/" target="_blank" rel="noopener"><img src="img/qr-code.svg" alt="QR code linking to cuny-ai-lab.github.io/fall-2026-vibe-coding-i"></a>
+        <span class="qr-caption"><span style="color:var(--fg);font-weight:normal">Scan to follow along</span><br><a href="https://cuny-ai-lab.github.io/fall-2026-vibe-coding-i/" target="_blank" rel="noopener" style="color:var(--accent)">cuny-ai-lab.github.io/fall-2026-vibe-coding-i</a></span>
       </div>
       <div class="title-credit">
         <a href="https://ailab.gc.cuny.edu/" target="_blank" rel="noopener"><img src="img/Logo Horizontal Bianco@2x.png" alt="CUNY AI Lab" width="160" height="40"></a>
