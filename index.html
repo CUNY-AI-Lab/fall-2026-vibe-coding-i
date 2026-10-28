@@ -1107,7 +1107,7 @@
             <span class="agenda-section-title">Part 3 — Installation &amp; Setup</span>
             <span class="agenda-section-time">35m</span>
           </div>
-          <a class="agenda-item" href="#20"><span class="agenda-item-label">Your CUNY AI Lab API Key &amp; Quota</span></a>
+          <a class="agenda-item" href="#20"><span class="agenda-item-label">Your CUNY AI Lab Access &amp; Quota</span></a>
           <a class="agenda-item" href="#21"><span class="agenda-item-label">Installing Pi</span></a>
           <a class="agenda-item" href="#22"><span class="agenda-item-label">Connect Pi to CUNY AI Lab</span></a>
           <a class="agenda-item" href="#24"><span class="agenda-item-label">Upcoming Workshops</span></a>
@@ -1498,8 +1498,10 @@
       <div class="step-grid">
         <div class="step-row frag"><div class="step-num">1</div><div class="step-text"><strong>macOS:</strong> install <a href="https://brew.sh" target="_blank" rel="noopener">Homebrew</a>, then run the &ldquo;Next steps&rdquo; commands it prints<span class="code-block">/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;</span></div></div>
         <div class="step-row frag"><div class="step-num">2</div><div class="step-text"><strong>macOS:</strong> install the GitHub CLI<span class="code-block">brew install gh</span></div></div>
-        <div class="step-row frag"><div class="step-num">3</div><div class="step-text"><strong>Windows:</strong> install it, then open a new PowerShell window<span class="code-block">winget install GitHub.cli</span></div></div>
-        <div class="step-row frag"><div class="step-num">4</div><div class="step-text">Check that it worked:<span class="code-block">gh --version</span></div></div>
+        <div class="step-row frag"><div class="step-num">3</div><div class="step-text"><strong>Windows:</strong> install Git and the GitHub CLI, then open a new PowerShell window<span class="code-block">winget install Git.Git
+winget install GitHub.cli</span></div></div>
+        <div class="step-row frag"><div class="step-num">4</div><div class="step-text">Check that it worked:<span class="code-block">git --version
+gh --version</span></div></div>
       </div>
     </div>
   </section>
@@ -1529,28 +1531,28 @@
     </div>
   </section>
 
-  <!-- 20 · CUNY AI LAB API KEY & QUOTA -->
-  <section class="slide" role="group" aria-roledescription="slide" data-slide="api-key" aria-label="Your CUNY AI Lab API Key and Quota">
+  <!-- 20 · CUNY AI LAB ACCESS & QUOTA -->
+  <section class="slide" role="group" aria-roledescription="slide" data-slide="api-key" aria-label="Your CUNY AI Lab Access and Quota">
     <div class="content">
       <div class="label">Setup</div>
-      <h2>Your CUNY AI Lab API Key &amp; Quota</h2>
+      <h2>Your CUNY AI Lab Access &amp; Quota</h2>
     </div>
     <div class="stage">
       <div class="key-guide">
-        <p class="key-guide-gateway">The CUNY AI Lab Gateway connects Pi to the models available through the Lab. Your personal key identifies your account and applies your quota.</p>
+        <p class="key-guide-gateway">The CUNY AI Lab Gateway connects Pi to the models available through the Lab. You sign in to Pi with your CUNY account, which gives this computer a personal key tied to your quota.</p>
         <img class="key-guide-shot" src="img/cail-api-key-creation-mobile.jpg" alt="CUNY AI Lab Model access form with a key name field and Create key button">
-        <p class="key-guide-lead">Create a personal key in your CUNY AI Lab Dashboard. Copy it when it appears. You cannot reveal the complete key again.</p>
+        <p class="key-guide-lead">No key to copy: Pi saves it when you sign in. Prefer to paste a key? Create one in your CUNY AI Lab Dashboard and copy it when it appears. You cannot reveal the complete key again.</p>
         <div class="key-guide-details">
           <div>
             <h3>Keep it private</h3>
-            <p>Paste the key only into Pi&rsquo;s hidden prompt. Never put it in chat, GitHub, screenshots, or email.</p>
+            <p>Paste a key only into Pi&rsquo;s sign-in prompt. Never put it in chat, GitHub, screenshots, or email.</p>
           </div>
           <div>
             <h3>Your quota</h3>
-            <p>All your personal keys share one allowance. Creating another key does not add capacity. Check your current usage in the Dashboard.</p>
+            <p>All your personal keys share one monthly allowance. Creating another key does not add capacity. Check your current usage in the Dashboard.</p>
           </div>
         </div>
-        <a class="key-guide-link" href="https://ailab.gc.cuny.edu/docs/api-keys/" target="_blank" rel="noopener">ailab.gc.cuny.edu/docs/api-keys/</a>
+        <a class="key-guide-link" href="https://ailab.gc.cuny.edu/docs/cail-pi/" target="_blank" rel="noopener">ailab.gc.cuny.edu/docs/cail-pi/</a>
       </div>
     </div>
   </section>
@@ -1568,26 +1570,23 @@
           <div class="col-tag">Windows</div>
           <div class="col-title">PowerShell</div>
           <div class="col-sub">
-            1. Install Node.js (22.19 or newer) and Git:
-            <span class="code-block">winget install OpenJS.NodeJS.LTS
-winget install Git.Git</span>
-            2. Close PowerShell and open a new window<br>
-            3. Check with <code>node --version</code> and <code>git --version</code><br>
-            4. Run the workshop setup:
-            <span class="code-block">npx.cmd @cuny-ai-lab/cail-pi</span>
+            1. Install Pi with Pi&rsquo;s installer:
+            <span class="code-block">irm https://pi.dev/install.ps1 | iex</span>
+            2. Press Enter to accept Pi&rsquo;s suggestions<br>
+            3. Add CUNY AI Lab to Pi:
+            <span class="code-block">pi install npm:@cuny-ai-lab/cail-pi</span>
+            <span style="opacity:0.7;">PowerShell blocks <code>pi</code>? Type <code>pi.cmd</code> instead</span>
           </div>
         </div>
         <div class="col">
           <div class="col-tag">macOS</div>
           <div class="col-title">Terminal</div>
           <div class="col-sub">
-            1. No Homebrew yet? Install it, then run the &ldquo;Next steps&rdquo; commands it prints:
-            <span class="code-block">/bin/bash -c &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)&quot;</span>
-            2. Install Node.js:
-            <span class="code-block">brew install node</span>
-            3. Open a new Terminal window and check <code>node --version</code> and <code>git --version</code><br>
-            4. Run the workshop setup:
-            <span class="code-block">npx @cuny-ai-lab/cail-pi</span>
+            1. Install Pi with Pi&rsquo;s installer:
+            <span class="code-block">curl -fsSL https://pi.dev/install.sh | sh</span>
+            2. Press Enter to accept Pi&rsquo;s suggestions. At &ldquo;Start pi now?&rdquo; type <code>n</code>. Told your shell isn&rsquo;t using the new install yet? Open a new Terminal window<br>
+            3. Add CUNY AI Lab to Pi:
+            <span class="code-block">pi install npm:@cuny-ai-lab/cail-pi</span>
             <span style="opacity:0.7;">Permission error? <strong>Don&rsquo;t use <code>sudo</code></strong>. Raise your hand</span>
           </div>
         </div>
@@ -1603,15 +1602,14 @@ winget install Git.Git</span>
     </div>
     <div class="stage">
       <div class="step-grid">
-        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">When LazyPi asks, choose <strong>Install everything</strong><br><span style="opacity:0.7;">Takes a few minutes. Warnings and a note about <code>/login</code> are normal: wait for the key prompt</span></div></div>
-        <div class="step-row frag"><div class="step-num">2</div><div class="step-text">At <code>CUNY AI Lab API key:</code> paste your key <span style="opacity:0.7;">(your typing stays hidden)</span></div></div>
-        <div class="step-row frag"><div class="step-num">3</div><div class="step-text">Make sure you&rsquo;re in your projects folder, then make one for today:<span class="code-block">pwd
+        <div class="step-row frag"><div class="step-num">1</div><div class="step-text">Make sure you&rsquo;re in your projects folder, then make one for today:<span class="code-block">pwd
 mkdir workshop-demo
 cd workshop-demo</span></div></div>
-        <div class="step-row frag"><div class="step-num">4</div><div class="step-text">Start Pi with <code>pi</code> (<code>pi.cmd</code> on Windows)</div></div>
-        <div class="step-row frag"><div class="step-num">5</div><div class="step-text">Type <code>/model</code> and choose a CUNY AI Lab model</div></div>
-        <div class="step-row frag"><div class="step-num" style="background:var(--accent);">?</div><div class="step-text">Something off? Run the health check, or just ask!<span class="code-block">npx @cuny-ai-lab/cail-pi --doctor      # macOS
-npx.cmd @cuny-ai-lab/cail-pi --doctor  # Windows</span></div></div>
+        <div class="step-row frag"><div class="step-num">2</div><div class="step-text">Start Pi:<span class="code-block">pi</span></div></div>
+        <div class="step-row frag"><div class="step-num">3</div><div class="step-text">Type <code>/login cail</code> and choose <strong>Sign in with CUNY AI Lab</strong>. Sign in with CUNY Login in your browser, click <strong>Connect Pi</strong>, then come back to Pi<br><span style="opacity:0.7;">Prefer a key? Choose <strong>Sign in with an API key</strong> and paste it</span></div></div>
+        <div class="step-row frag"><div class="step-num">4</div><div class="step-text">A message ending in &ldquo;no default model is configured&rdquo; is normal. Send your first message: Pi answers with DeepSeek V4 Flash</div></div>
+        <div class="step-row frag"><div class="step-num">5</div><div class="step-text">Type <code>/model</code> to see the other CUNY AI Lab models</div></div>
+        <div class="step-row frag"><div class="step-num" style="background:var(--accent);">?</div><div class="step-text">Something off? Type <code>/cail</code> inside Pi for a health check, or just ask!</div></div>
       </div>
     </div>
   </section>
@@ -1632,9 +1630,7 @@ npx.cmd @cuny-ai-lab/cail-pi --doctor  # Windows</span></div></div>
             <li>Help a neighbor if you're all set</li>
             <li>No issue too small to ask about</li>
           </ul>
-          <div class="stageHint" style="margin-top:clamp(16px,2vw,24px);">Used <code>sudo</code> while installing Pi on a Mac? Fix it with:<span class="code-block">sudo chown -R $(whoami) ~/.npm ~/.pi
-brew install node
-npm install -g @earendil-works/pi-coding-agent</span></div>
+          <div class="stageHint" style="margin-top:clamp(16px,2vw,24px);">Set up Pi with <code>npx</code> at an earlier workshop? Close Pi and update instead:<span class="code-block">pi update --all</span></div>
         </div>
       </div>
     </div>
@@ -1668,7 +1664,7 @@ npm install -g @earendil-works/pi-coding-agent</span></div>
         </div>
         <div class="step-row">
           <div class="step-num" style="background:var(--accent);">!</div>
-          <div class="step-text"><strong>Mind your quota</strong><br><span style="opacity:0.7;">Your API key comes with a limited quota. Keep an eye on it as you experiment so you don&rsquo;t burn through it before the next workshop.</span></div>
+          <div class="step-text"><strong>Mind your quota</strong><br><span style="opacity:0.7;">Your Lab access comes with a monthly allowance. Keep an eye on it as you experiment so you don&rsquo;t burn through it before the next workshop.</span></div>
         </div>
       </div>
     </div>
@@ -1745,8 +1741,8 @@ npm install -g @earendil-works/pi-coding-agent</span></div>
               <div class="res-desc">Pi — open-source AI coding agent that runs in your terminal</div>
             </li>
             <li>
-              <a href="https://github.com/CUNY-AI-Lab/cail-pi" target="_blank" rel="noopener">github.com/CUNY-AI-Lab/cail-pi</a>
-              <div class="res-desc">CUNY AI Lab × Pi — setup, <code>--doctor</code> health check, troubleshooting, and uninstall</div>
+              <a href="https://ailab.gc.cuny.edu/docs/cail-pi/" target="_blank" rel="noopener">ailab.gc.cuny.edu/docs/cail-pi</a>
+              <div class="res-desc">CAIL Pi setup guide — install, CUNY sign-in, <code>/cail</code> health check, optional web search, and troubleshooting</div>
             </li>
             <li>
               <a href="https://docs.github.com" target="_blank" rel="noopener">docs.github.com</a>

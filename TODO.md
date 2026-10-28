@@ -10,6 +10,7 @@ _Nothing queued._
 
 ## Done
 
+- [x] Moved Pi setup to CAIL Pi 0.4.0 (Pi installer, `pi install`, `/login cail`, `/cail`); dropped the `npx` installer, LazyPi and Node.js steps
 - [x] Slide 19 — CUNY AI Lab gateway / API key / quota section (Steve)
 - [x] Tested the full Pi setup flow (`npx.cmd @cuny-ai-lab/cail-pi`) on a clean Windows laptop
 - [x] Renamed the installer to `@cuny-ai-lab/cail-pi` across slides and notes

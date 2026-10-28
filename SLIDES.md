@@ -37,7 +37,7 @@ Part 2 — Development Environment (25m):
 - Getting Started with GitHub
 
 Part 3 — Installation & Setup (35m):
-- Your CUNY AI Lab API Key & Quota
+- Your CUNY AI Lab Access & Quota
 - Installing Pi
 - Connect Pi to CUNY AI Lab
 - Upcoming Workshops
@@ -230,8 +230,8 @@ Each command is a card with text + CRT screen visualization.
 **Stage (step-grid, fragments):**
 1. macOS: install Homebrew from brew.sh, then run the "Next steps" commands it prints: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 2. macOS: `brew install gh`
-3. Windows: `winget install GitHub.cli`, then open a new PowerShell window
-4. Check that it worked: `gh --version`
+3. Windows: install Git and the GitHub CLI (`winget install Git.Git`, `winget install GitHub.cli`), then open a new PowerShell window
+4. Check that it worked: `git --version`, `gh --version`
 
 ---
 
@@ -257,18 +257,18 @@ Each command is a card with text + CRT screen visualization.
 
 ---
 
-## Slide 20 — Your CUNY AI Lab API Key & Quota
+## Slide 20 — Your CUNY AI Lab Access & Quota
 
 **Label:** Setup
-**Title:** Your CUNY AI Lab API Key & Quota
+**Title:** Your CUNY AI Lab Access & Quota
 
 **Stage (key guide):**
-- **Gateway:** The CUNY AI Lab Gateway connects Pi to the models available through the Lab. Your personal key identifies your account and applies your quota.
+- **Gateway:** The CUNY AI Lab Gateway connects Pi to the models available through the Lab. You sign in to Pi with your CUNY account, which gives this computer a personal key tied to your quota.
 - Compact screenshot of the CUNY AI Lab Dashboard's key-creation form
-- **Lead:** Create a personal key in your CUNY AI Lab Dashboard. Copy it when it appears. You cannot reveal the complete key again.
-- **Keep it private:** Paste the key only into Pi's hidden prompt. Never put it in chat, GitHub, screenshots, or email.
-- **Your quota:** All your personal keys share one allowance. Creating another key does not add capacity. Check your current usage in the Dashboard.
-- **Guide:** https://ailab.gc.cuny.edu/docs/api-keys/
+- **Lead:** No key to copy: Pi saves it when you sign in. Prefer to paste a key? Create one in your CUNY AI Lab Dashboard and copy it when it appears. You cannot reveal the complete key again.
+- **Keep it private:** Paste a key only into Pi's sign-in prompt. Never put it in chat, GitHub, screenshots, or email.
+- **Your quota:** All your personal keys share one monthly allowance. Creating another key does not add capacity. Check your current usage in the Dashboard.
+- **Guide:** https://ailab.gc.cuny.edu/docs/cail-pi/
 
 ---
 
@@ -279,8 +279,9 @@ Each command is a card with text + CRT screen visualization.
 **Subtitle:** Our AI coding agent, connected to CUNY AI Lab models
 
 **Stage (two-column compare):**
-- **Windows — PowerShell:** 1. `winget install OpenJS.NodeJS.LTS` (Node.js 22.19 or newer) and `winget install Git.Git` → 2. Close PowerShell and open a new window → 3. Check with `node --version` and `git --version` → 4. `npx.cmd @cuny-ai-lab/cail-pi`
-- **macOS — Terminal:** 1. No Homebrew yet? Install it, then run the "Next steps" commands it prints: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"` → 2. Install Node.js: `brew install node` → 3. Open a new Terminal window and check `node --version` and `git --version` → 4. `npx @cuny-ai-lab/cail-pi`
+- **Windows — PowerShell:** 1. Install Pi with Pi's installer: `irm https://pi.dev/install.ps1 | iex` → 2. Press Enter to accept Pi's suggestions → 3. Add CUNY AI Lab to Pi: `pi install npm:@cuny-ai-lab/cail-pi`
+- **Windows note (muted):** PowerShell blocks `pi`? Type `pi.cmd` instead
+- **macOS — Terminal:** 1. Install Pi with Pi's installer: `curl -fsSL https://pi.dev/install.sh | sh` → 2. Press Enter to accept Pi's suggestions. At "Start pi now?" type `n`. Told your shell isn't using the new install yet? Open a new Terminal window → 3. Add CUNY AI Lab to Pi: `pi install npm:@cuny-ai-lab/cail-pi`
 - **macOS note (muted):** Permission error? **Don't use `sudo`**. Raise your hand
 
 ---
@@ -291,12 +292,12 @@ Each command is a card with text + CRT screen visualization.
 **Title:** Connect Pi to CUNY AI Lab
 
 **Stage (step-grid, fragments):**
-1. When LazyPi asks, choose **Install everything**. Takes a few minutes. Warnings and a note about `/login` are normal: wait for the key prompt
-2. At `CUNY AI Lab API key:` paste your key (your typing stays hidden)
-3. Make sure you're in your projects folder, then make one for today: `pwd`, `mkdir workshop-demo`, `cd workshop-demo`
-4. Start Pi with `pi` (`pi.cmd` on Windows)
-5. Type `/model` and choose a CUNY AI Lab model
-- **?** Something off? Run the health check (`npx @cuny-ai-lab/cail-pi --doctor` on macOS, `npx.cmd @cuny-ai-lab/cail-pi --doctor` on Windows), or just ask!
+1. Make sure you're in your projects folder, then make one for today: `pwd`, `mkdir workshop-demo`, `cd workshop-demo`
+2. Start Pi: `pi`
+3. Type `/login cail` and choose **Sign in with CUNY AI Lab**. Sign in with CUNY Login in your browser, click **Connect Pi**, then come back to Pi — muted: Prefer a key? Choose **Sign in with an API key** and paste it
+4. A message ending in "no default model is configured" is normal. Send your first message: Pi answers with DeepSeek V4 Flash
+5. Type `/model` to see the other CUNY AI Lab models
+- **?** Something off? Type `/cail` inside Pi for a health check, or just ask!
 
 ---
 
@@ -311,7 +312,7 @@ Each command is a card with text + CRT screen visualization.
 - Raise your hand — we'll come to you
 - Help a neighbor if you're all set
 - No issue too small to ask about
-- **Hint:** Used `sudo` while installing Pi on a Mac? Fix it with: `sudo chown -R $(whoami) ~/.npm ~/.pi` → `brew install node` → `npm install -g @earendil-works/pi-coding-agent`
+- **Hint:** Set up Pi with `npx` at an earlier workshop? Close Pi and update instead: `pi update --all`
 
 ---
 
@@ -326,7 +327,7 @@ Each command is a card with text + CRT screen visualization.
 - **Vibe Coding III: Bring Your Own Project Clinic** — Tuesday, October 13 · 2:30–4:00 pm. Prerequisite: Vibe Coding I & II, or comparable experience.
 - **Co-Working Sessions** — 2:00–4:00 pm · Thursday, October 29 · Tuesday, November 17 · Thursday, December 3
 - [Register for upcoming workshops](https://cail-workshop-registration.ailab-452.workers.dev/) — **In the meantime:** experiment with Pi on your own!
-- **! Mind your quota** — Your API key comes with a limited quota. Keep an eye on it as you experiment so you don't burn through it before the next workshop.
+- **! Mind your quota** — Your Lab access comes with a monthly allowance. Keep an eye on it as you experiment so you don't burn through it before the next workshop.
 
 ---
 
@@ -346,9 +347,9 @@ Each command is a card with text + CRT screen visualization.
 - [github.com/cuny-ai-lab](https://github.com/cuny-ai-lab) — CUNY AI Lab on GitHub — open source repos, workshop decks, datasets
 - [cuny-ai-lab.github.io/fall-2026-vibe-coding-ii](https://cuny-ai-lab.github.io/fall-2026-vibe-coding-ii/) — Vibe Coding II: Building a Prototype — companion workshop deck
 - [pi.dev](https://pi.dev) — Pi — open-source AI coding agent that runs in your terminal
-- [github.com/CUNY-AI-Lab/cail-pi](https://github.com/CUNY-AI-Lab/cail-pi) — CUNY AI Lab × Pi — setup, `--doctor` health check, troubleshooting, and uninstall
+- [ailab.gc.cuny.edu/docs/cail-pi](https://ailab.gc.cuny.edu/docs/cail-pi/) — CAIL Pi setup guide — install, CUNY sign-in, `/cail` health check, optional web search, and troubleshooting
 - [docs.github.com](https://docs.github.com) — GitHub documentation — repos, Pages, pull requests, Actions
 
 ---
 
-_Last synced: 2026-09-22 (installer renamed to `@cuny-ai-lab/cail-pi`; credits trimmed; `ls` folded into the navigating slide and the Working with Files slide removed; gateway / API key slide added by Steve; representations + attention dropped from the slide 7 pipeline). Deck has 24 slides. Update both this file and `index.html` together._
+_Last synced: 2026-10-28 (Pi setup moved to CAIL Pi 0.4.0: Pi's own installer, `pi install npm:@cuny-ai-lab/cail-pi`, `/login cail` with CUNY sign-in, `/cail` health check; Windows Git moved to the GitHub CLI slide; the `npx` installer, LazyPi and Node.js steps removed). Deck has 25 slides. Update both this file and `index.html` together._
